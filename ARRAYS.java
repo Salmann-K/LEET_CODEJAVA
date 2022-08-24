@@ -232,5 +232,40 @@ public class ARRAYS {
     }
      */
 
+    
+    /*
+    Problem 59
+    public static int[][] generateMatrix(int n) {
+        int rowmin = 0, colmin = 0, colmax = n - 1, rowmax = n - 1;
+        int[][] matrix = new int[n][n];
+        int tne = n * n,int count = 0,val = 1;
+        while(count <tne)
+        {
+            for (int i = colmin; i <= colmax & count < tne; i++) {
+                matrix[rowmin][i] = val++;
+                count++;
+            }
+            rowmin++;
+            for (int i = rowmin; i <= rowmax && count < tne; i++) {
+                matrix[i][colmax] = val++;
+                count++;
+            }
+            colmax--;
+            for (int i = colmax; i >= colmin & count < tne; i--) {
+                matrix[rowmax][i] = val++;
+                count++;
+            }
+            rowmax--;
+            for (int i = rowmax; i >= rowmin & count < tne; i--) {
+                matrix[i][colmin] = val++;
+                count++;
+            }
+            colmin++;
+        }
+        return matrix;
+    }
+     */
+ 
+ 
 
 }
