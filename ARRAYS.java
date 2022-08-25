@@ -266,6 +266,56 @@ public class ARRAYS {
     }
      */
  
- 
+      
+    /*
+    Problem 238
+    public static int[] productExceptSelf(int[] nums) {
+        int [] ans = new int[nums.length];
+        int temp=1;
+        for(int i=0; i<nums.length; i++)
+        {ans[i]=temp;
+            temp *=nums[i];
+        }temp=1;
+        for(int i=nums.length-1; i>=0; i--)
+        {   ans[i] *= temp;
+            temp *= nums[i];
+        }
+        return ans;
+    }
+     */
+
+    /*
+    Problem 55
+     public static boolean canJump(int[] nums) {
+        int ls = nums.length-1;
+        for(int i=nums.length-1; i>=0; i--)
+        {
+            if(i+nums[i]>=ls)
+                ls = i;
+        }
+        return ls==0;
+    }
+     */
+
+    /*
+    Problem 198
+      public static int rob(int[] nums) {
+        int [] sums = new int[nums.length];
+        int max = sums[0];
+        for (int i = 0; i < nums.length; i ++) {
+            sums[i] = nums[i];
+            max = Math.max(max, sums[i]);
+        }
+        if (nums.length > 1) {
+            sums[1] = Math.max(sums[0], sums[1]);
+        }
+        for (int i = 2; i < nums.length; i ++) {
+            sums[i] = Math.max(sums[i - 2] + sums[i], sums[i - 1]);
+            max = Math.max(max, sums[i]);
+        }
+
+        return max;
+    }
+     */
 
 }
