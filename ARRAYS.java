@@ -356,6 +356,46 @@ public class ARRAYS {
         }
     }
      */
+ 
+ 
+     
+    /*
+    Problem 1920
+    public int[] buildArray(int[] nums) {
+        int [] ans = new int[nums.length];
+        for (int i = 0; i <nums.length; i++) {
+        ans[i]=nums[nums[i]];
+        }
+        return ans;
+    }
+     */
+
+    /*
+    // Problem 2006
+    public static int countKDifference(int[] nums, int k) {
+        int count=0;
+        for (int i = 0; i < nums.length ; i++) {
+            for (int j = i; j < nums.length ; j++) {
+                if (nums[i]-nums[j]==k || nums[i]-nums[j]==(-k)){
+                    count++;
+                }}}
+        return count;
+    }
+    */
+
+    /*
+    //Problem 2176
+    public static int countPairs(int[] nums, int k) {
+    int count=0;
+        for (int i = 0; i < nums.length ; i++) {
+            for (int j = i; j < nums.length ; j++) {
+                if( (nums[i]==nums[j] && ((i*j)%k==0) ) && i<j  ){
+                    count++;
+                }}}
+        return count;
+    }
+    */
+
 
 
 }
