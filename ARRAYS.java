@@ -460,6 +460,42 @@ public class ARRAYS {
     }
     */
 
- 
+    
+/*
+    Problem 1979
+    static int findGCD(int [] nums){
+        Arrays.sort(nums);
+        int gcd=0;
+        for (int i = 1; i <=nums[nums.length-1] ; i++) {
+            if(nums[0]%i==0  && nums[nums.length-1]%i==0){
+                gcd=i;
+            }}
+        return gcd;}
+    */
+
+      /*
+    Problem 2057
+    public static int smallestEqual(int[] nums) {
+        for (int i = 0; i < nums.length ; i++) {
+            if((i%10)==nums[i])
+                return i;
+        }
+        return -1;}
+*/
+
+    /*
+    Problem 2154
+    public static int findFinalValue(int[] nums, int original) {
+    Arrays.sort(nums);
+        for (int i = 0; i < nums.length ; i++) {
+            if(nums[i]==original)
+            {
+                original=original*2;
+            }
+        }
+        return original;
+    }
+     */
+
  
 }
