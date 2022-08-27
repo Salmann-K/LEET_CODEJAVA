@@ -427,5 +427,39 @@ public class ARRAYS {
     }
      */
 
+     
+    /*
+    Problem 1913
+    public static int maxProductDifference(int[] nums) {
+        Arrays.sort(nums);
+        int max=0,min=0,res=0;
+        max=nums[nums.length-1]*nums[nums.length-2];
+        min=nums[0]*nums[1];
+        return (max-min);
+    }
+     */
 
+    /*
+    // Problem !464
+    public int maxProduct(int[] nums) {
+    Arrays.sort(nums);
+    return ( (nums[nums.length-1]-1) * (nums[nums.length-2]-1) );
+    }
+     */
+
+    /*
+    Problem 2089
+    public List<Integer> targetIndices(int[] nums, int target) {
+    ArrayList<Integer> res = new ArrayList<>();
+    Array.sort(nums);
+        for (int i = 0; i < nums.length ; i++) {
+            if(nums[i]==target){
+                res.add(i);
+            }}
+    return res;
+    }
+    */
+
+ 
+ 
 }
