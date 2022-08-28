@@ -540,5 +540,38 @@ public class ARRAYS {
         }}
     return sum;}
 */
+ 
+ 
+   
+    /*
+    Problem 1431
+    public static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+        List<Boolean> list = new ArrayList<>();
+        int max = Arrays.stream(candies).max().getAsInt();
+        for (int i = 0; i < candies.length; i++) {
+            list.add(candies[i] + extraCandies >= max ? true : false);
+        }
+        return list;
+    }
+     */
+
+    /*
+    Problem 1748
+    public int sumOfUnique(int[] nums) {
+        int sum=0;
+        for (int i = 0; i < nums.length ; i++) {
+            int count=0;
+            for (int j = 0; j < nums.length ; j++) {
+                if(nums[i]==nums[j])   {
+                    count++;
+                }}
+            if(count==1){
+                sum=sum+nums[i];
+            }}
+        return sum;
+    }
+     */
+
+
 
 }
