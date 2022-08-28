@@ -497,5 +497,48 @@ public class ARRAYS {
     }
      */
 
- 
+     
+      
+    /*
+    Problem 1450
+    public int busyStudent(int[] startTime, int[] endTime, int queryTime) {
+        int count = 0;
+        for(int i=0; i<startTime.length; i++){
+            if(startTime[i] <= queryTime && endTime[i] >= queryTime){
+                count++;
+            }}
+        return count;
+    }
+     */
+
+/*
+    Problem 2221
+    public int triangularSum(int[] nums) {
+        int n = nums.length;
+        while(n > 1) {
+            int j = 0;
+            for(int i=0; i<n-1; i++) {
+                nums[j] = (nums[i] + nums[i+1]) % 10;
+                j++;
+            }
+            n--;}
+        return nums[0]; }
+     */
+
+    /*
+   Problem 1561
+    public static int maxCoins(int[] piles) {
+    Arrays.sort(piles);
+    int n= piles.length/3;
+    int sum=0;
+    if(piles.length==3){
+        return piles[1];
+    }
+    else{
+        for (int i = 2; i <=2*n  ; i+=2) {
+            sum+=piles[piles.length-i];
+        }}
+    return sum;}
+*/
+
 }
