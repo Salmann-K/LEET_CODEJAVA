@@ -572,6 +572,63 @@ public class ARRAYS {
     }
      */
 
+     
+    /*
+    Problem 1475
+    public int[] finalPrices(int[] prices) {
+        for (int i = 0; i < prices.length ; i++) {
+            for (int j = 0; j < prices.length ; j++) {
+                if(j>i  && prices[j]<=prices[i]){
+                prices[i]=prices[i]-prices[j];
+                break;
+                }}}
+        return prices;}
+     */
+
+    /*
+    Problem 169
+    public int majorityElement(int[] nums) {
+    int majority=0,length= nums.length;
+        for (int i = 0; i <nums.length ; i++) {
+        int count=0;
+            for (int j = 0; j < nums.length ; j++) {
+                if(nums[i]==nums[j]){
+                    count++;
+                }}
+            if(count>length/2){
+                majority=nums[i];
+                break;
+            }}
+        return majority;
+    }
+     */
+
+    /*
+    // Union Of Two Arrays
+    private static void union(int[] arr1, int[] arr2, int l1, int l2) {
+        int[] res=new int[l1+l2];
+        for (int i = 0; i <l1 ; i++) {
+            res[i]= arr1[i];
+        }
+        for (int i = 0; i <l2 ; i++) {
+            res[i+l1]= arr2[i];
+        }
+        for (int i = 0; i < res.length ; i++) {
+            int current=res[i];
+            for (int j = 0; j < res.length ; j++) {
+                if(j==i){ continue;}
+                if(res[j]==current){
+                    for (int k = j; k < res.length-1 ; k++) {
+                        res[k]=res[k+1];
+                    }
+                    res[res.length-1]=0; }
+            }}
+        for (int re : res) {
+            if(re==0){continue;}
+            System.out.print(re+" ");
+        }
+    }
+     */
 
 
 }
