@@ -630,5 +630,23 @@ public class ARRAYS {
     }
      */
 
+     
+    /*
+    // Intersection Of Two Arrays
+    public static void intersection(int [] m1 , int [] m2){
+        ArrayList<Integer> res = new ArrayList<>();
+        for (int i = 0; i <m1.length ; i++) {
+            int curr=m1[i];
+            for (int j = 0; j <m2.length ; j++) {
+                if(curr==m2[j]){
+                    if(res.contains(curr)){continue;}
+                    else
+                        res.add(curr);
+                }
+            }}
+        System.out.println(res);
+        }
+     */
+
 
 }
