@@ -59,4 +59,45 @@ public class BINARYSEARCH {
      */
   
   
+    /*
+    Problem 367
+       public static boolean isPerfectSquare(int num) {
+        if(num == 0 || num ==1) return true;
+        int n = 1;
+        while(num > 0){
+            num-=n;
+            n+=2;
+        }
+        return num == 0;
+    }
+     */
+
+    /*
+    Problem 441
+     public static int arrangeCoins(int n) {
+        int nums = 0;
+        int i = 1;
+        while(i <= n) {
+            nums++;
+            n = n - i;
+            i++;}
+        return nums;
+    } */
+    /*
+    Problem 1539
+     public static int findKthPositive(int[] arr, int k) {
+        int j = 1;int i = 0;
+        while(true){
+            if(i<arr.length && arr[i]==j)
+                i++;
+            else{
+                k--;}
+            if(k==0)
+                break;
+            j++;}
+        return j;}
+     */
+
+  
+  
 }
