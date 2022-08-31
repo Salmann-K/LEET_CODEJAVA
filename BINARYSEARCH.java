@@ -97,6 +97,26 @@ public class BINARYSEARCH {
             j++;}
         return j;}
      */
+  
+          /*
+    Problem 35
+     public static int searchInsert(int[] nums, int target) {
+        for (int i=0;i<nums.length;i++){
+            if (nums[i] >= target)return i;
+        }
+        return nums.length;}
+     */
+    /*
+    Problem 852
+     public static int peakIndexInMountainArray(int[] arr) {
+        int ans=0;
+        for (int i = 1; i <arr.length ; i++) {
+            if((arr[i]>arr[i-1] ) && ( arr[i]>arr[i+1])) {
+                ans=i;
+            }  }
+        return ans; }
+     */
+
 
   
   
