@@ -116,6 +116,42 @@ public class BINARYSEARCH {
             }  }
         return ans; }
      */
+  
+        /*
+    Problem 1351
+      public static int countNegatives(int[][] grid) {
+        int count=0;
+        for (int[] ints : grid) {
+            for (int j = 0; j < ints.length; j++) {
+                if (ints[j] < 0)
+                    count++; } }
+        return count; }
+     */
+    /*
+    Problem 1346
+    public static boolean checkIfExist(int[] arr) {
+        boolean b=false;
+        for (int i = 0; i <arr.length ; i++) {
+            for (int j = 0; j < arr.length ; j++) {
+                if(i!=j){
+                    if(i>=0 & j<arr.length){
+                        if(arr[i]==2*arr[j])
+                        {b=true;
+                        } } } } }
+        return b;
+    }
+     */
+    /*
+    Problem 1608
+      public static int specialArray(int[] nums) {
+        Arrays.sort(nums);
+        if(nums[0] >= nums.length) return nums.length;
+        for (int i = 1; i <= nums.length - 1; i++) {
+            int count = nums.length - i;
+            if(nums[i] >= count && nums[i - 1] < count) {
+                return count;  } }
+        return -1; }
+     */
 
 
   
