@@ -223,5 +223,15 @@ public class BINARYSEARCH {
     }
      */
 
+      
+ 
+    /*
+    Problem 153
+      public static int findMin(int[] nums) {
+        Arrays.sort(nums);
+        return nums[0];
+    }
+     */
+
   
 }
