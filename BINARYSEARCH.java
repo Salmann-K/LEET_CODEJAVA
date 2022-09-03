@@ -232,6 +232,78 @@ public class BINARYSEARCH {
         return nums[0];
     }
      */
+  
+  
+    /*
+    Problem 287
+ public static int findDuplicate(int[] nums) {
+        int ans=0;
+        while (true) {
+            int num = nums[0];
+            if (num == nums[num]) {
+                ans=num;
+                break;
+            }
+            int tmp = nums[num];
+            nums[num] = num;
+            nums[0] = tmp;
+        }
+        return ans;
+    }
+     */
+
+    /*
+    Problem 18
+      public static List<List<Integer>> fourSum(int[] nums, int target) {
+        List<List<Integer>> res=new ArrayList();
+        if(nums==null || nums.length==0)
+        int n=nums.length;
+        Arrays.sort(nums);
+        for(int i=0;i<n;i++){
+            for(int j=i+1;j<n;j++){
+                int partial_sum=target-(nums[i]+nums[j]);
+                int front=j+1,back=n-1;
+                while(front<back){
+                    int sum=nums[front]+nums[back];
+                    if(sum>partial_sum)
+                        back--;
+                    else if(sum<partial_sum)
+                        front++;
+                    else{
+                        ArrayList<Integer> quad =new ArrayList<Integer>();
+                        quad.add(nums[i]);
+                        quad.add(nums[j]);
+                        quad.add(nums[front]);
+                        quad.add(nums[back]);
+                        res.add(quad);
+                        while(front<back&&nums[front]==quad.get(2))++front;
+                        while(front<back&& nums[back]==quad.get(3)) --back;
+                    }  }
+                while(j+1<n&&nums[j]==nums[j+1])
+                    ++j; }
+            while(i+1<n&&nums[i]==nums[i+1])
+                ++i;  }
+        return res; }
+     */
+    /*
+    Problem 4
+    public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        int n1=nums1.length,n2=nums2.length;
+        int nl=(nums1.length+ nums2.length);
+        int [] num3= new int[nl];
+        System.arraycopy(nums1,0,num3,0,n1);
+        System.arraycopy(nums2,0,num3,n1,n2);
+        Arrays.sort(num3);
+        float median=0.f;
+        if(num3.length%2!=0) {
+            int a=(num3.length/2);
+            median=num3[a];
+        }else {
+            int a=(num3.length/2)-1;
+            median=(num3[a]+num3[a+1])/2.0f; }
+        return median;
+    }
+     */
 
   
 }
