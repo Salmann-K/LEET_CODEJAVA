@@ -135,6 +135,35 @@ public class SORTING {
        return nums.length;
    }
 */
+    
+    
+   /*
+    public static void sort2 (int [] nums)
+    {
+        int i=0;
+        ArrayList<Integer> al = new ArrayList<>();
+        while(i<nums.length)
+        {
+            int correct = nums[i];
+            if(nums[i] <nums.length && nums[i] != nums[correct])
+            {
+                swap(nums,i,correct);
+            }
+            else
+            {
+                i++;
+            }
+        }
+        for (int j = 0; j < nums.length ; j++) {
+            {
+                if(nums[j] != j+1)
+                    al.add(j+1);
+            }
+        }
+        System.out.println(al);
+
+    }
+*/
 
 
 }
