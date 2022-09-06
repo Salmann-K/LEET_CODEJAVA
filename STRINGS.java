@@ -38,5 +38,48 @@ public class STRINGS {
         return String.valueOf(t);
     }
      */
+     
+     
+    /*
+    problem - 1108
+
+    public static String defangIPaddr(String address) {
+        StringBuilder str = new StringBuilder("");
+        for(int i = 0; i < address.length(); ++i)
+        {
+            if(address.charAt(i) == '.')
+                str.append("[.]");
+            else
+                str.append(address.charAt(i));
+        }
+
+        return str.toString();
+    }
+     */
+
+    /*
+    // Problem 1678
+     public static String interpret(String command) {
+        int size = command.length() - 1, count = 0;
+        StringBuilder str = new StringBuilder();
+        while (count <= size) {
+            char ch = command.charAt(count);
+            if (ch == 'G') {
+                str.append("G");
+                count++;
+            } else if (ch == '(') {
+                if (command.charAt(count + 1) == ')') {
+                    str.append("o");
+                    count += 2;
+                } else {
+                    str.append("al");
+                    count += 4;
+                }
+            }
+        }
+        return str.toString();
+    }
+     */
+
 
 }
