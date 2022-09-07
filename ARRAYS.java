@@ -658,6 +658,7 @@ public class ARRAYS {
     }
      */
 
+      /*
       public int removeDuplicates(int[] nums) {
   
     if (nums.length== 0 || nums.length == 1)
@@ -676,5 +677,7 @@ public class ARRAYS {
   
     return j;
 }
+*/
+
 
 }
