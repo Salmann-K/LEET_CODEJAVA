@@ -80,6 +80,55 @@ public class STRINGS {
         return str.toString();
     }
      */
+     
+     
+    /*
+    problem 1662
+public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
+    String a="";
+    String b="";
+        for (int i = 0; i < word1.length ; i++) {
+            a=a+word1[i];
+        }
+        for (int i = 0; i < word2.length ; i++) {
+            b=b+word2[i];
+        }
+        return b.equals(a);
+    }
+
+    or
+
+       public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
+        return String.join("",word1).equals(String.join("",word2));
+    }
+
+     */
+
+    /*
+    problem 709
+     /*
+     public static String toLowerCase(String s) {
+        return s.toLowerCase();
+    }
+     */
+
+    /*
+    problem 1704
+     public static boolean halvesAreAlike(String s) {
+    int a=s.length();
+    String s1 = s.substring(0,a/2);
+    String s2 = s.substring(a/2,a);
+    int c1=0,c2=0;
+        for (int i = 0; i <s1.length() ; i++) {
+            if("AEIOUaeiou".indexOf(s1.charAt(i))>=0)
+                c1++;
+            if("AEIOUaeiou".indexOf(s2.charAt(i))>=0)
+                c2++;
+        }
+        return c1==c2;
+    }
+     */
+
 
 
 }
