@@ -141,6 +141,21 @@ public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
      */
 
 
+      /*
+    Problem 657
+    public static boolean judgeCircle(String moves) {
+        int x=0,y=0;
+        for (int i = 0; i <moves.length() ; i++) {
+            switch (moves.charAt(i)) {
+                case 'R' -> x++;
+                case 'L' -> x--;
+                case 'U' -> y++;
+                case 'D' -> y--;
+            }
+        }
+       return (x==0 && y==0);
+    }
+     */
 
 
 }
