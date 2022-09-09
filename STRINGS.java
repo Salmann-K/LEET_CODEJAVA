@@ -174,6 +174,27 @@ public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
     }
      */
 
+      
+     
+    /*
+    Problem 28
+    public static int strStr(String haystack, String needle) {
+        return haystack.indexOf(needle);
+    }
+     */
+
+    /*
+    Problem !25
+      public static boolean isPalindrome(String s) {
+        StringBuilder content = new StringBuilder();
+        for(int i = 0; i < s.length(); i++)
+            if(Character.isLetterOrDigit(s.charAt(i)))
+                content.append(s.charAt(i));
+        content = new StringBuilder(content.toString().replace(" ", "").toLowerCase());
+        String value = content.toString();
+        return value.equals(content.reverse().toString());
+    }
+     */
 
 
 }
