@@ -156,6 +156,24 @@ public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
        return (x==0 && y==0);
     }
      */
+     
+         /*
+    Problem 557
+      public static String reverseWords(String s) {
+        int index = 0;
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == ' ' ) {
+                result.insert(i, ' ');
+                index = i + 1;
+
+            } else
+                result.insert(index, s.charAt(i));
+        }
+        return result.toString();
+    }
+     */
+
 
 
 }
