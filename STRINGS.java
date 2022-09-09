@@ -195,6 +195,38 @@ public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
         return value.equals(content.reverse().toString());
     }
      */
+     
+     
+    /*
+    Problem 14
+public static String longestCommonPrefix(String[] strs) {
+        String shortest = "";
+        int shortestL = Integer.MAX_VALUE;
+        int index = 0;
+        for(int i = 0; i < strs.length; i++){
+            if(strs[i].length() < shortestL){
+                shortest = strs[i];
+                shortestL = shortest.length();
+                index = i;
+            }
+        }
+
+        for(int i = 0; i < strs.length; i++){
+            if(i == index){
+                continue;
+            }
+
+            for(int j = 0; j < shortest.length(); j++){
+                if(strs[i].charAt(j) != shortest.charAt(j)){
+                    shortest = shortest.substring(0, j);
+                }
+            }
+        }
+        return shortest;
+    }
+
+     */
+
 
 
 }
