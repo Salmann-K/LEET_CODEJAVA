@@ -228,5 +228,25 @@ public static String longestCommonPrefix(String[] strs) {
      */
 
 
+     
+    /*
+    Problem 58
+     public static int lengthOfLastWord(String s) {
+        String a=s.strip();
+        int b= a.length()-1;
+        int c=a.lastIndexOf(" ");
+        int d=b-c;
+        return d;
+    }
+     */
 
+    /*
+    Problem 1784
+    public static boolean checkOnesSegment(String s) {
+        return !s.contains("01");
+    }
+     */
+
+     
+     
 }
