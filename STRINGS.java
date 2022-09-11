@@ -260,5 +260,20 @@ public static String longestCommonPrefix(String[] strs) {
         return c;
     }
      */
+     
+     
+     
+    /*
+    Problem 1832
+      public static boolean checkIfPangram(String sentence) {
+        for(char i='a'; i<='z'; i++)
+        {
+            if(!sentence.contains(String.valueOf(i)))
+                return false;
+        }
+        return true;
+    }
+     */
+
 
 }
