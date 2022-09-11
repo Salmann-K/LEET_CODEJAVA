@@ -305,5 +305,42 @@ public static String longestCommonPrefix(String[] strs) {
     }
      */
      
+      /*
+    Problem 13
+        public static int romanToInt(String s) {
+        int res=0;
+        for (int i = 0; i <s.length() ; ++i) {
+            int preChar = (i > 0) ? valueOf(s.charAt(i - 1)) : 0;
+            int curChar = valueOf(s.charAt(i));
+
+            if (preChar < curChar) {
+                res = res + curChar - 2 * preChar;
+            } else {
+                res += curChar;
+            }
+        }
+        return res;
+        }
+    public static int valueOf(char c) {
+        switch (c) {
+            case 'I':
+                return 1;
+            case 'V':
+                return 5;
+            case 'X':
+                return 10;
+            case 'L':
+                return 50;
+            case 'C':
+                return 100;
+            case 'D':
+                return 500;
+            case 'M':
+                return 1000;
+        };
+        return 0;
+    }
+     */
+     
      
 }
