@@ -290,4 +290,20 @@ public static String longestCommonPrefix(String[] strs) {
      */
      
      
+    /*
+    Problem 2108
+      public static String firstPalindrome(String[] words) {
+        StringBuilder check = new StringBuilder();
+        for (String word : words) {
+            check.append(word);
+            if (String.valueOf(check).equals(String.valueOf(check.reverse()))) {
+                return check.toString();
+            }
+            check.setLength(0);
+        }
+        return "";
+    }
+     */
+     
+     
 }
