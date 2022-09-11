@@ -275,5 +275,19 @@ public static String longestCommonPrefix(String[] strs) {
     }
      */
 
-
+      
+     
+    /*
+    Problem 1816
+  public static String truncateSentence(String s, int k) {
+    String [] s1= s.split(" ");
+    String out="";
+        for (int i = 0; i <k ; i++) {
+            out += s1[i] + " ";
+        }
+        return out.trim();
+    }
+     */
+     
+     
 }
