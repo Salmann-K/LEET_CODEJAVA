@@ -400,4 +400,23 @@ public static String longestCommonPrefix(String[] strs) {
      */
 
      
+    /*
+    Problem 1974
+    public static int minTimeToType(String word) {
+        int n = word.length();
+        char prev = 'a';
+        int time = 0;
+        for(int i=0 ; i<n ; i++){
+            int x = (int)prev;
+            int y = (int)word.charAt(i);
+            int cost1 = Math.abs(x-y);
+            int cost2 = 26-Math.abs(x-y);
+            time += Math.min(cost1 , cost2) +1;
+            prev = word.charAt(i);
+        }
+        return time;
+    }
+     */
+
+     
 }
