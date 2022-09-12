@@ -343,4 +343,28 @@ public static String longestCommonPrefix(String[] strs) {
      */
      
      
+    /*
+    Problem 1812
+     public static boolean squareIsWhite(String coordinates) {
+        int a = changeto(coordinates.charAt(0));
+        int b = coordinates.charAt(1);
+        return (a+b)%2!=0;
+    }
+    public static int changeto(char ch)
+    {
+        return switch (ch) {
+            case 'a' -> 1;
+            case 'b' -> 2;
+            case 'c' -> 3;
+            case 'd' -> 4;
+            case 'e' -> 5;
+            case 'f' -> 6;
+            case 'g' -> 7;
+            case 'h' -> 8;
+            default -> 0;
+        };
+    }
+     */
+
+     
 }
