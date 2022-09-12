@@ -367,4 +367,37 @@ public static String longestCommonPrefix(String[] strs) {
      */
 
      
+     
+    /*
+    Problem 1768
+    public static String mergeAlternately(String word1, String word2) {
+        int i = 0, j = 0;
+        StringBuilder answer = new StringBuilder();
+        boolean turn = true;
+        while(i < word1.length() || j < word2.length()) {
+            if(turn) {
+                if(i < word1.length()) {
+                    answer.append(word1.charAt(i++));
+                    turn = false;
+                } else {
+                    while(j < word2.length()) {
+                        answer.append(word2.charAt(j++));
+                    }
+                }
+            } else {
+                if(j < word2.length()) {
+                    answer.append(word2.charAt(j++));
+                    turn = true;
+                } else {
+                    while(i < word1.length()) {
+                        answer.append(word1.charAt(i++));
+                    }
+                }
+            }
+        }
+        return answer.toString();
+    }
+     */
+
+     
 }
