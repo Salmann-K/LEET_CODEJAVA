@@ -468,5 +468,22 @@ public static String longestCommonPrefix(String[] strs) {
         return new String(arr);
         }
      */
+     
+      /*
+     Problem 1221
+         public static int balancedStringSplit(String s) {
+        int count=0,ans=0;
+        for (int i = 0; i <s.length() ; i++) {
+            if(s.charAt(i)=='L')
+                count++;
+            else
+                count--;
+            if(count==0)
+                ans++;
+        }
+        return ans;
+    }
+      */
+    
    
 }
