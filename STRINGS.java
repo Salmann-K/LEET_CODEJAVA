@@ -445,5 +445,28 @@ public static String longestCommonPrefix(String[] strs) {
     }
      */
    
-     
+      /*
+    Problem 1374
+        public static String generateTheString(int n) {
+        String s = "";
+        if(n%2==0)
+        {for (int i = 1; i <=n ; i++) {
+                if(i<=n-1)
+                    s+="a";
+                else
+                    s+="b";}}
+        else
+        {for (int i = 1; i <=n ; i++) {
+                s+="a";
+            }}return s;
+        // Second Approach
+            /*
+       char [] arr = new char [n];
+        Arrays.fill(arr, 'a');
+        if(n%2==0)
+            arr[0]='b';
+        return new String(arr);
+        }
+     */
+   
 }
