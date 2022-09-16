@@ -501,5 +501,38 @@ public static String longestCommonPrefix(String[] strs) {
     }
      */
      
+      /*
+    Problem 1880
+     public static boolean isSumEqual(String firstWord, String secondWord, String targetWord) {
+        int c1=0,c2=0,c3=0;
+        for (int i = 0; i <firstWord.length() ; i++) {
+            c1=c1*10+assign(firstWord.charAt(i));
+        }
+        for (int i = 0; i <secondWord.length() ; i++) {
+            c2=c2*10+assign(secondWord.charAt(i));
+        }
+        for (int i = 0; i <targetWord.length() ; i++) {
+            c3=c3*10+assign(targetWord.charAt(i));
+        }
+        return (c1+c2)==c3;
+    }
+    public static int assign(char ab)
+    {
+        return switch (ab) {
+            case 'a' -> 0;
+            case 'b' -> 1;
+            case 'c' -> 2;
+            case 'd' -> 3;
+            case 'e' -> 4;
+            case 'f' -> 5;
+            case 'g' -> 6;
+            case 'h' -> 7;
+            case 'i' -> 8;
+            case 'j' -> 9;
+            default -> -1;
+        };
+     */
+
+     
      
 }
