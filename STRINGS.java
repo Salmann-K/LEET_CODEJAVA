@@ -551,4 +551,19 @@ public static String longestCommonPrefix(String[] strs) {
      */
 
      
+    /*
+    Problem 1859
+    public static String sortSentence(String s) {
+        String [] temp = s.split(" ");
+        String [] st = new String[temp.length];
+        String res=" ";
+
+        for (String x: temp) {
+        int index=x.charAt(x.length()-1)-'0'-1;
+        st[index]=x.substring(0,x.length()-1);
+        }
+        return String.join(" ",st);
+    }
+     */
+
 }
