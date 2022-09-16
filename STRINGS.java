@@ -565,5 +565,21 @@ public static String longestCommonPrefix(String[] strs) {
         return String.join(" ",st);
     }
      */
+     
+     
+     /*
+    problem 1773
+    public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
+        int result = 0;
+        int index = ruleKey.equals("type") ? 0 : ruleKey.equals("color") ? 1 : 2;
+
+        int length = items.size();
+        for(int i = 0; i < length; i++){
+            if(items.get(i).get(index).equals(ruleValue)) result++;
+        }
+        return result;  }
+*/
+
+     
 
 }
