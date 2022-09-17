@@ -697,6 +697,60 @@ public class ARRAYS {
     }
     */
  
- 
+ /"
+    public int removeElement(int[] nums, int val) {
+        
+        int n = 0;
+        int i = 0;
+        int j = 1;
+        
+        int status = 0;
+        
+        for(int k = 0; k < nums.length; k++)
+        {
+            if(nums[k] == val)
+            {
+                status = 1;
+                break;
+            }
+        }
+        
+        if(status == 1)
+        {
+        
+            while(n < nums.length - 1)
+            {
 
+                if(nums[i] == val && nums[j] != val)
+                {
+                    nums[i] = nums[j];
+                    nums[j] = val;
+                    i++;
+                    j++;
+                }
+
+                else if(nums[i] == val && nums[j] == val)
+                {
+                    j++;
+                }
+
+                else
+                {
+                    i++;
+                    j++;
+                }
+
+                n++;
+            }
+
+            return i;
+        }
+        
+        else
+        {
+            return nums.length;
+        }
+    }
+}
+/*
 }
