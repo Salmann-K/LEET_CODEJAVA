@@ -610,5 +610,23 @@ public static String longestCommonPrefix(String[] strs) {
             }}
         return count;}
      */
+     
+     
+    /*
+    Problem 1844
+    public static String replaceDigits(String s) {
+    StringBuilder sb = new StringBuilder();
+        for (int i = 0; i <s.length() ; i++) {
+            if(i%2!=0){
+                int digit = Character.getNumericValue(s.charAt(i));
+                char need=(char)(s.charAt(i-1)+digit);
+                sb.append(need);
+            }
+            else
+            sb.append(s.charAt(i));
+        }
+        return sb.toString();}
+    */
+
 
 }
