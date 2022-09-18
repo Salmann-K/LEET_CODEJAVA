@@ -595,5 +595,20 @@ public static String longestCommonPrefix(String[] strs) {
         return true;}
      */
 
+              /*
+    Problem 1935
+    public static int canBeTypedWords(String text, String brokenLetters) {
+        boolean flag=true;
+        int count =0;
+        for(int i=0; i<text.length();i++){
+            if(brokenLetters.contains(text.charAt(i)+"")){
+                flag=false;
+            }
+            if(text.charAt(i) == ' ' || i==text.length()-1){
+                if(flag){count++; }
+                flag=true;
+            }}
+        return count;}
+     */
 
 }
