@@ -580,6 +580,20 @@ public static String longestCommonPrefix(String[] strs) {
         return result;  }
 */
 
-     
+     /*
+    Problem 1941
+    public static boolean areOccurrencesEqual(String s) {
+        int arr []= new int[26];
+        for (char ch:s.toCharArray()) {
+            arr[ch-97]++;
+        }
+        int a=arr[s.charAt(0)-'a'];
+        for (int i:arr) {
+        if(i!=0 && a!=i)
+            return false;
+        }
+        return true;}
+     */
+
 
 }
