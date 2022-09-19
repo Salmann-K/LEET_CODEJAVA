@@ -776,4 +776,21 @@ public class ARRAYS {
     */
  
  
+    /*
+    K-th element of two sorted Arrays // GEEKSFORGEEKS
+    public long kthElement( int arr1[], int arr2[], int n, int m, int k) {
+        ArrayList<Integer>al=new ArrayList<>();
+        for(int i=0;i<n;i++){
+            al.add(arr1[i]);
+        }
+        for(int i=0;i<m;i++){
+            al.add(arr2[i]);
+        }
+        Collections.sort(al);
+        return (long)al.get(k-1);
+    }
+     */
+ 
+ 
+ 
 }
