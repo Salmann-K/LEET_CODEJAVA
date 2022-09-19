@@ -644,6 +644,23 @@ public static String longestCommonPrefix(String[] strs) {
         return - 1;
     }
      */
+     
+         /*
+     383. Ransom Note
+     public static boolean canConstruct(String ransomNote, String magazine) {
+          int [] count= new int[26];
+          for (char cha: magazine.toCharArray()){
+               count[cha-'a']++;
+          }
+          for (char cha: ransomNote.toCharArray()){
+               int val=cha-'a';
+               if(count[val]<=0) return false;
+               count[val]--;
+          }
+          return true;
+     }
+      */
+
 
 
 }
