@@ -661,6 +661,31 @@ public static String longestCommonPrefix(String[] strs) {
      }
       */
 
-
+      /*
+    Lexicographically smallest string // GeeksForGeeks
+    static String lexicographicallySmallest(String S, int k) {
+        int K=0;
+        int n=S.length();
+        int i=0;
+        for(i=0;i<32;i++){
+            if((int)Math.pow(2,i)==n){ break; }
+        }
+        if(i<32){ K=k/2; }
+        else{K=k*2;}
+        if(k>=n) return "-1";
+        StringBuilder sb=new StringBuilder(S);
+        for(i=0;i<K;i++){
+            int j=0;
+            int length=sb.length();
+            if(length==0) break;
+            for(j=0;j<length-1;j++){
+                if(sb.charAt(j)>sb.charAt(j+1)){break;}
+            }
+            sb.deleteCharAt(j);
+        }
+        if(sb.length()!=0)return sb.toString();
+        return "-1";
+    }
+    */
 
 }
