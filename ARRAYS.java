@@ -791,6 +791,20 @@ public class ARRAYS {
     }
      */
  
- 
- 
+     /*
+    k largest elements  // GeeksForGeeks
+    int[] kLargest(int[] arr, int n, int k) {
+        Arrays.sort(arr);
+        ArrayList<Integer>al=new ArrayList<>();
+        int ar[]=new int[k];
+        for(int i=n-1;i>=0;i--){
+            al.add(arr[i]);
+        }
+        for(int j=0;j<k;j++){
+            ar[j]=al.get(j);
+        }
+        return ar;
+    }
+    */
+  
 }
