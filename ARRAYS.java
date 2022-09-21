@@ -806,5 +806,23 @@ public class ARRAYS {
         return ar;
     }
     */
+ 
+  /*
+    Sum of Middle Elements of two sorted arrays  // GEEKSFORGEEKS
+    int findMidSum(int[] ar1, int[] ar2, int n) {
+        ArrayList<Integer>al=new ArrayList<>();
+        for(int i=0;i<n;i++){
+            al.add(ar1[i]);
+        }
+        for(int i=0;i<n;i++){
+            al.add(ar2[i]);
+        }
+        Collections.sort(al);
+        int mid=al.size()/2;
+        return (al.get(mid)+al.get(mid-1));
+    }
+    */
+ 
+ 
   
 }
