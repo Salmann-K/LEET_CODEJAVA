@@ -68,4 +68,21 @@ public class PATTERN {
 */
      
      
+       /*
+    static void pattern7(int n)
+    {
+        for (int row = 0; row <n ; row++) {
+            //For Spaces
+            for (int col = 0; col <=row ; col++) {
+                System.out.print(" ");
+            }
+            // For Stars
+            for (int i = 1; i <=n-row ; i++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+     */
+     
 }
