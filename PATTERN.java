@@ -50,6 +50,22 @@ public class PATTERN {
     }
  */
 
+     /*
+    static void pattern6(int n)
+    {
+        for (int row = 1; row <=n ; row++) {
+            //For Spaces
+            for (int col = 1; col <=n-row ; col++) {
+                System.out.print(" ");
+            }
+            // For Stars
+            for (int i = 1; i <=row ; i++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+*/
      
      
 }
