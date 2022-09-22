@@ -823,6 +823,30 @@ public class ARRAYS {
     }
     */
  
- 
+  
+  /*
+    public int[] sumEvenAfterQueries(int[] nums, int[][] queries) {
+        int Evensum=0;
+        for(int i=0;i<nums.length;i++)
+            if(nums[i]%2==0)
+                Evensum+=nums[i];
+        int ans[]=new int[queries.length];
+        for(int i=0;i<queries.length;i++){
+            int a=queries[i][0];
+            int b=queries[i][1];
+            if(nums[b]%2==0){Evensum-=nums[b];
+                nums[b]+=a;
+                if(nums[b]%2==0)    Evensum+=nums[b];
+            }
+            else{
+                nums[b]+=a;
+                if(nums[b]%2==0)
+                    Evensum+=nums[b];
+            }
+            ans[i]=Evensum;
+        }
+        return ans;
+    }
+     */
   
 }
