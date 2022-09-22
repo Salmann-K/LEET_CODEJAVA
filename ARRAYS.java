@@ -848,5 +848,23 @@ public class ARRAYS {
         return ans;
     }
      */
+ 
+ /*
+    Triplet Sum in Array // GEEKSFORGEEKS
+    public static boolean find3Numbers(int a[], int n, int m)
+    {
+        HashMap<Integer,Integer> hm=new HashMap<>();
+        for(int i=0;i<n;i++)
+        {
+            for(int j=i+1;j<n;j++)
+            {
+                if(hm.containsKey(m-(a[i]+a[j])))
+                    return true;
+            }
+            hm.put(a[i],1);
+        }
+        return false;
+    }
+    */
   
 }
