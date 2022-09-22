@@ -102,4 +102,25 @@ public class PATTERN {
     }
 */
      
+       /*
+    static void pattern9(int n)
+    {
+        for (int rows=0;rows<n;rows++)
+        {
+            //For Spaces
+            for(int j=0;j<=rows;j++)
+            {
+                System.out.print(" ");
+            }
+            //For Stars
+            for(int col=(2*n)-1; col>2*rows;col--){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+     */
+  
+     
+     
 }
