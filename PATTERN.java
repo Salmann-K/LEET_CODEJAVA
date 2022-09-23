@@ -121,6 +121,23 @@ public class PATTERN {
     }
      */
   
+       /*
+    static void pattern10(int n)
+    {
+        for (int row = 0; row <n ; row++) {
+            //For Spaces
+            for (int col = 0; col <n-(row-1) ; col++) {
+                System.out.print(" ");
+            }
+            // For Stars
+            for (int i = 0; i <=row ; i++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    */
+  
      
      
 }
