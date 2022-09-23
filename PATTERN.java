@@ -157,6 +157,59 @@ public class PATTERN {
     }
     */
   
+       /*
+    static void pattern12(int n)
+    {
+        for (int rows=0;rows<2*n;rows++)
+        {if(rows<n) {
+                //For Spaces
+                for(int j=0;j<=rows;j++)
+                {
+                    System.out.print(" ");
+                }
+                //For Stars
+                for(int col=n-1; col>=rows;col--){
+                    System.out.print("* ");
+                }
+                System.out.println();}
+            else {
+                //For Spaces
+                for(int j=0;j<=2*n-(rows+1);j++)
+                {
+                    System.out.print(" ");
+                }
+                for (int i = 0; i <rows-(n-1); i++) {
+                    System.out.print("* ");
+                }
+                System.out.println();}}
+    }
+     */
+    /*
+    static void pattern13(int n)
+    {
+        for (int row = 1; row <=n ; row++) {
+
+            for (int col = 1; col <=n-row ; col++) {
+                System.out.print(" ");
+            }
+            if(row==1 || row==n){
+                for(int j=1;j<=row*2-1;j++) {
+                    System.out.print("*");
+                }
+            }
+            else{
+                for(int j=1;j<=row*2-1;j++){
+                    if(j==1 || j==row*2-1)
+                        System.out.print("*");
+                    else
+                        System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+*/
+     
      
      
 }
