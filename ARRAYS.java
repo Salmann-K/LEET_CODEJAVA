@@ -866,5 +866,28 @@ public class ARRAYS {
         return false;
     }
     */
+ 
+     /*
+    Rearrange Array Alternately
+    public static void rearrange(long arr[], int n){
+        int maxInd=n-1;
+        int minInd=0;
+        long maxElement=arr[n-1]+1;
+        for(int i=0; i<n; i++){
+            if(i%2==0){
+                arr[i]+=(arr[maxInd]%maxElement)*maxElement;
+                maxInd--;
+            }
+            else{
+                arr[i]+=(arr[minInd]%maxElement)*maxElement;
+                minInd++;
+            }
+        }
+        for(int i=0; i<n; i++){
+            arr[i]=arr[i]/maxElement;
+        }
+    }
+    */
+ 
   
 }
