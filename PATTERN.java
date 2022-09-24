@@ -276,6 +276,50 @@ public class PATTERN {
         }
     }
     */
+     
+       /*
+    static void pattern16(int n)
+    {
+        for (int row = 0; row <n ; row++) {
+            int number=1;
+            //For Spaces
+            for (int col = n; col >row ; col--) {
+                System.out.print(" ");
+            }
+            // For Stars
+            for (int i = 0; i <=row ; i++) {
+
+                    System.out.print(number+" ");
+                    number=number* (row - i) /(i+1);
+            }
+            System.out.println(); }}
+     */
+    /*
+    static void pattern17(int n) {
+        for (int i=1; i<= n-1 ; i++) {
+            //For Outer Spaces
+            for (int j = n; j > i; j--) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k < 2 * i; k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i=n-2; i>= 1 ; i--)
+        {
+            //For Outer Spaces
+            for (int j = n; j > i ; j--) {
+                System.out.print(" ");
+            }
+            System.out.print("*");
+            for (int k = 1; k < 2*i;k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+     */
   
      
 }
