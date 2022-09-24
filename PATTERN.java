@@ -211,5 +211,31 @@ public class PATTERN {
 */
      
      
+       /*
+    static void pattern14(int n)
+    {
+        for (int row = n; row >0 ; row--) {
+            for (int i =1; i <n-row ; i++) {
+                System.out.print(" ");
+            }
+            if(row==1 || row==n) {
+                for (int i = 1; i <=(2*row)-1 ; i++) {
+                    System.out.print("*");
+                }
+            }
+            else {
+                for(int j=1;j<=(row*2)-1;j++){
+                    if(j==1 || j==(row*2)-1)
+                        System.out.print("*");
+                    else
+                        System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+     */
+  
+     
      
 }
