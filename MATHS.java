@@ -16,5 +16,19 @@ public class MATHS {
             return isHappy(sum);
         }}
 */
+    
+       /*
+    // Armstrong Number
+    static String armstrongNumber(int n) {
+        int sum = 0,tm=n;
+        while (n != 0) {
+            sum += (n % 10) * (n % 10) * (n % 10);
+            n /= 10;
+        }
+        if(sum==tm){ return "Yes"; }
+        return "No";
+    }
+     */
+
 
 }
