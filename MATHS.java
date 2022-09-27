@@ -63,5 +63,33 @@ public class MATHS {
         return arr[n];}
      */
 
+    
+    /*
+    // Problem 728
+    public static List selfDividingNumbers(int left, int right) {
+        List<Integer> results = new ArrayList<Integer>();
+        for(int i=left;i<right+1;i++){
+            if (palin(i)){
+                results.add(i);
+            }
+        }
+        return results;
+    }
+    public static boolean palin(int i) {
+        int n=i;
+        while(n>0){
+            int rem = n%10;
+            n=n/10;
+            if (rem==0){
+                return false;
+            }
+            if(i%rem!=0){
+                return false;
+            }
+        }
+        return true;
+    }
+*/
 
+    
 }
