@@ -122,6 +122,24 @@ public class MATHS {
         return root;
     }
         */
+    
+        /*
+    //problem 1281
+    public static int subtractProductAndSum(int n) {
+        int pr=1,sum=0,diff;
+        while(n>0){
+            int tem=n%10;
+            n=n/10;
+            pr*=tem;
+            sum+=tem;
+        }
+        if(pr>sum){
+            return pr-sum;
+        }
+        return sum-pr;
+    }
+       */
+
 
     
 }
