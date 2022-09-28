@@ -700,5 +700,17 @@ public static String longestCommonPrefix(String[] strs) {
         return str;
     }
      */
+     
+     /*
+    43. Multiply Strings
+    import java.math.BigInteger;
+    public String multiply(String num1, String num2) {
+        BigInteger str1 = new BigInteger(num1);
+        BigInteger str2 = new BigInteger(num2);
+
+        BigInteger ans = str1.multiply(str2);
+        return ans.toString();
+    }
+     */
 
 }
