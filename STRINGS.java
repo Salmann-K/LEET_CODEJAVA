@@ -687,5 +687,18 @@ public static String longestCommonPrefix(String[] strs) {
         return "-1";
     }
     */
+     
+      /*
+    Largest Number formed from an Array
+
+    String printLargest(String[] arr) {
+        Arrays.sort(arr,(a,b)->(b+a).compareTo(a+b));
+        String str="";
+        for(int i=0;i<arr.length;i++){
+            str+=arr[i];
+        }
+        return str;
+    }
+     */
 
 }
