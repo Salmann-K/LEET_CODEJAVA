@@ -969,9 +969,8 @@ public class ARRAYS {
         */
         
       /*
-      
+      658. Find K Closest Elements
       public List<Integer> findClosestElements(int[] arr, int k, int x) {
-
         int left = 0, right = arr.length - k;
         while (left < right) {
             int mid = (left + right) / 2;
