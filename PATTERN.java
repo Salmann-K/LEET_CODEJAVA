@@ -184,6 +184,7 @@ public class PATTERN {
                 System.out.println();}}
     }
      */
+
     /*
     static void pattern13(int n)
     {
@@ -294,6 +295,7 @@ public class PATTERN {
             }
             System.out.println(); }}
      */
+
     /*
     static void pattern17(int n) {
         for (int i=1; i<= n-1 ; i++) {
