@@ -4,6 +4,7 @@ public class BINARYSEARCH {
   
    /*
     Problem 374
+
     public static int guessNumber(int n) {
         int s=1,e=n;
         while(s<=e){
@@ -18,6 +19,7 @@ public class BINARYSEARCH {
 
     /*
     Problem 278
+
       public static int firstBadVersion(int n) {
         int start = 1;
         int end = n;
@@ -37,6 +39,7 @@ public class BINARYSEARCH {
 
     /*
     Problem 167
+
     public static int[] twoSum(int[] numbers, int target) {
         int first = -1;
         int second = -1;
