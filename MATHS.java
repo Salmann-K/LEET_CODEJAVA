@@ -35,6 +35,7 @@ public class MATHS {
 
         /*
     // Problem 342
+
         public static boolean isPowerOfFour(int n) {
             if(n<=0){return false;}
             if(n==1){return true;}
