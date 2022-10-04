@@ -3,6 +3,7 @@ package com.company.UPLOAD;
 public class MATHS {
 
     /*
+
     // Problem 202
     public static boolean isHappy(int n) {
         if(n==1) return true;
