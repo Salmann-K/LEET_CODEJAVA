@@ -3,6 +3,7 @@ package com.company.UPLOAD;
 public class ARRAYS {
  /*
     Problem 1929
+
      public int[] getConcatenation(int[] nums) {
          int [] cn1 = new int[2*nums.length];
         for(int i=0; i<nums.length; i++)
@@ -16,6 +17,7 @@ public class ARRAYS {
 
     /*
     Problem 1480
+
     public static int[] runningSum(int[] nums) {
         int [] runsum = new int[nums.length];
         runsum[0]=nums[0];
