@@ -32,6 +32,7 @@ public class STRINGS {
 
     /*
         problem 1528;
+
         public static String restoreString(String s, int[] indices) {
         char[] t = new char[s.length()];
         for(int i = 0;i<t.length;i++){
@@ -61,6 +62,7 @@ public class STRINGS {
 
     /*
     // Problem 1678
+
      public static String interpret(String command) {
         int size = command.length() - 1, count = 0;
         StringBuilder str = new StringBuilder();
