@@ -31,6 +31,7 @@ public class ARRAYS {
 
     /*
     Problem 1672
+
       public static int maximumWealth(int[][] accounts) {
         int max=Integer.MIN_VALUE;
         int sum=0;
@@ -52,6 +53,7 @@ public class ARRAYS {
 
     /*
     Problem 1512
+
     public int numIdenticalPairs(int[] nums) {
       int count = 0;
         for(int i=0; i<nums.length; i++)
