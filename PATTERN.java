@@ -29,6 +29,7 @@ public class PATTERN {
      
      
      /*
+
     static void pattern5(int n)
     {
         for (int row = 0; row <=2*n ; row++) {
