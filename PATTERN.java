@@ -159,6 +159,7 @@ public class PATTERN {
     */
   
        /*
+
     static void pattern12(int n)
     {
         for (int rows=0;rows<2*n;rows++)
