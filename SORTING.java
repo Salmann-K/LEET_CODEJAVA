@@ -62,8 +62,7 @@ public class SORTING {
             {
                 swap(nums,i,correct);
             }
-            else
-            {
+            else{
                 i++;
             }
 
