@@ -5,6 +5,7 @@ public class MATHS {
     /*
 
     // Problem 202
+
     public static boolean isHappy(int n) {
         if(n==1) return true;
         else if(n>1 && n<7) return false;
