@@ -55,8 +55,7 @@ public class SORTING {
     public static List<Integer> findDuplicate(int[] nums) {
         int i=0;
         ArrayList<Integer> al = new ArrayList<>();
-        while(i<nums.length)
-        {
+        while(i<nums.length){
             int correct = nums[i]-1;
             if(nums[i] != nums[correct])
             {
