@@ -89,6 +89,7 @@ public class STRINGS {
      
     /*
     problem 1662
+
 public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
     String a="";
     String b="";
