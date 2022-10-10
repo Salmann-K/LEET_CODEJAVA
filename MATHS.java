@@ -133,6 +133,7 @@ public class MATHS {
     
         /*
     //problem 1281
+
     public static int subtractProductAndSum(int n) {
         int pr=1,sum=0,diff;
         while(n>0){
