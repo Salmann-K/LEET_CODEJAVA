@@ -76,7 +76,8 @@ public class SORTING {
  */
     
     
-    /* public static int findDuplicate(int[] nums) {
+    /* 
+public static int findDuplicate(int[] nums) {
         int i=0;
         int ans=0;
         while(i<nums.length)
