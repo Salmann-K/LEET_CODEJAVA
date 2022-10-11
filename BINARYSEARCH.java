@@ -92,6 +92,7 @@ public class BINARYSEARCH {
 
     /*
     Problem 1539
+
      public static int findKthPositive(int[] arr, int k) {
         int j = 1;int i = 0;
         while(true){
