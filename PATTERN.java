@@ -88,6 +88,7 @@ public class PATTERN {
      */
      
      /*
+
     static void pattern8(int n)
     {
         for (int row = 0; row <n ; row++) {
