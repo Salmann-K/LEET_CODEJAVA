@@ -119,6 +119,7 @@ public class ARRAYS {
 
     /*
     Problem 1572
+
       public static int diagonalSum(int[][] mat) {
         int sum=0;
         if( (mat.length&1) ==1)
