@@ -138,6 +138,7 @@ public class ARRAYS {
    
     /*
     Problem 867
+
      public static int[][] transpose(int[][] matrix) {
         int[][] ans=new int[matrix[0].length][matrix.length];
         for(int i=0;i<matrix.length;i++)
