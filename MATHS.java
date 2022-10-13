@@ -100,6 +100,7 @@ public class MATHS {
 */
 
     /*
+
     // Square Root Of A Number
     private static double sqrt(int n, int p) {
         int s=0;
