@@ -111,8 +111,10 @@ public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
      */
 
     /*
-    problem 709
+    
+
      /*
+     Problem 709
      public static String toLowerCase(String s) {
         return s.toLowerCase();
     }
