@@ -119,6 +119,7 @@ public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
      */
 
     /*
+
     problem 1704
      public static boolean halvesAreAlike(String s) {
     int a=s.length();
