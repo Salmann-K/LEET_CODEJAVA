@@ -53,6 +53,7 @@ public class SORTING {
 */
 
 /*
+
     public static List<Integer> findDuplicate(int[] nums) {
         int i=0;
         ArrayList<Integer> al = new ArrayList<>();
