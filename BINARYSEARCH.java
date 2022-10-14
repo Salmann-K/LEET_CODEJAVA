@@ -136,6 +136,7 @@ public class BINARYSEARCH {
                     count++; } }
         return count; }
      */
+
     /*
     Problem 1346
     public static boolean checkIfExist(int[] arr) {
