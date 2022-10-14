@@ -28,6 +28,7 @@ public class SORTING {
      */
 
 /*
+
     public static int[] findErrorNums(int[] nums) {
         int i=0;
         while(i<nums.length)
