@@ -192,6 +192,7 @@ public class PATTERN {
      */
 
     /*
+
     static void pattern13(int n)
     {
         for (int row = 1; row <=n ; row++) {
