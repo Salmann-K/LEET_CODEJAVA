@@ -106,6 +106,7 @@ public class PATTERN {
 */
      
        /*
+
     static void pattern9(int n)
     {
         for (int rows=0;rows<n;rows++)
