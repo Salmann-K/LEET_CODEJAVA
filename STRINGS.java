@@ -141,6 +141,7 @@ public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
      
     /*
     problem 1967
+
       public static int numOfStrings(String[] patterns, String word) {
         int c=0;
         for(String pattern: patterns)
