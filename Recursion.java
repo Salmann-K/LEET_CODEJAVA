@@ -28,6 +28,23 @@ public class Recursion {
             return bsearch(arr,target,m+1,m);
     }
      */
+     
+     /*
+    static void sumtriangle(int [] arr) {
+
+        if (arr.length<1)
+        {
+            return ;
+        }
+        int [] re = new int[(arr.length - 1)];
+        for (int i = 0; i < arr.length-1; i++) {
+            re[i] = arr[i] + arr[i + 1];
+        }
+        sumtriangle(re);
+        System.out.println(Arrays.toString(arr));
+    }
+     */
+    
 
     
 }
