@@ -67,5 +67,14 @@ public class Recursion {
     }
     */
     
+      /*
+    static char upper(String s){
+        for (int i = 0; i <s.length() ; i++) {
+            if(Character.isUpperCase(s.charAt(i)))
+                return s.charAt(i);
+        }
+        return 0;
+    }
+   
     
 }
