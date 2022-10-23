@@ -92,6 +92,18 @@ public class Recursion {
         }
         return 0;
     }
+    
+    /*
+    public static void printNos(int N)
+    {
+        if(N > 0)
+        {
+            printNos(N-1);
+            System.out.println(N);
+        }
+    }
+     */
+    
    
     
 }
