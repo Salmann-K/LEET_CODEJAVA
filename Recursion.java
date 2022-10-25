@@ -32,6 +32,21 @@ public class Recursion {
     }
      */
      
+         /*
+     Problem Code:FIBXOR01
+     static int spfib(int n)
+    {
+        if(n==0)
+        {
+            return 'a';
+        }
+        else if(n==1)
+        {
+            return 'b';
+        }
+            return spfib(n-1)^spfib(n-2);
+    }
+     */
 
      /*
     static int fibo(int n)
