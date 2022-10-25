@@ -143,5 +143,24 @@ public class Recursion {
 
     }
      */
+     
+      /*
+    static void bubblerecursion(int arr[],int n)
+    {
+        if(n==1)
+        {
+            return ;
+        }
+        for (int i = 0; i <arr.length-1 ; i++) {
+            if(arr[i]>arr[i+1])
+            {
+                int temp=arr[i];
+                arr[i]=arr[i+1];
+                arr[i+1]=temp;
+            }
+        }
+        bubblerecursion(arr,n-1);
+    }
+     */
     
 }
