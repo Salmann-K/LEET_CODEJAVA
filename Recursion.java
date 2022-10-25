@@ -162,5 +162,34 @@ public class Recursion {
         bubblerecursion(arr,n-1);
     }
      */
+     
+      /*
+    static int sumrecursion(int number)
+    {
+    if(number==0)
+    {
+        return 0;
+    }
+    return number%10+sumrecursion(number/10);
+    }
+     */
+
+    /*
+    static int productrecursion(int a, int b)
+    {
+        if (a < b)
+            return productrecursion(b, a);
+
+            // iteratively calculate
+            // y times sum of x
+        else if (b != 0)
+            return (a + productrecursion(a, b - 1));
+
+            // if any of the two numbers is
+            // zero return zero
+        else
+            return 0;
+    }
+     */
     
 }
