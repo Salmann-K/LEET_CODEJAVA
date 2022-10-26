@@ -191,5 +191,32 @@ public class Recursion {
             return 0;
     }
      */
+     
+     /*
+    static boolean prime(int n,int i)
+    {
+        if(n<=2){
+            return (n==2);
+        }
+        if(n%i==0){
+            return false;
+        }
+        if(i*i>n) {
+            return true;
+        }
+        return prime(n,i+1);
+    }
+     */
+
+    /*
+    static int recursum(int n)
+    {
+        if(n==1)
+        {
+            return n;
+        }
+        return n+recursum(n-1);
+    }
+     */
     
 }
