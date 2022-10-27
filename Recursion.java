@@ -285,5 +285,21 @@ public class Recursion {
     return n*factorial(n-1);
     }
      */
+     
+     /*
+    static int isSorted(int [] arr , int n)
+    {
+        if (n == 1 || n == 0)
+            return 1;
+
+        // Unsorted pair found (Equal values allowed)
+        if (arr[n - 1] < arr[n - 2])
+            return 0;
+
+        // Last pair was sorted
+        // Keep on checking
+        return isSorted(arr, n - 1);
+    }
+   */
     
 }
