@@ -2,6 +2,25 @@ package com.company.UPLOAD;
 
 public class Recursion {
      
+     /*
+        public static int count =0;
+    public static int numberOfSteps(int num) {
+        if(num==0)
+        {
+            return count;
+        }
+        if (num % 2 == 0) {
+            numberOfSteps(num/2);
+            count++;
+        }
+        else{
+            numberOfSteps(num-1);
+            count++ ;
+        }
+       return count;
+    }
+*/
+     
       /*
     //Problem 342
     public static boolean isPowerOfFour(int n) {
