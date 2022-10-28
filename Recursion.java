@@ -374,6 +374,21 @@ public class Recursion {
         }
     }
      */
+     
+      /*
+    static ArrayList<Integer> list = new ArrayList<>();
+    public static void findallindex(int [] arr,int target,int i)
+    {
+        if(i==arr.length){
+            return ;
+        }
+        if(arr[i]==target)
+        {
+        list.add(i);
+        }
+        findallindex(arr,target,i+1);
+    }
+    */
 
     
 }
