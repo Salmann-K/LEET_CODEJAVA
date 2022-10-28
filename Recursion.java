@@ -357,5 +357,23 @@ public class Recursion {
         return arr[i]<arr[i+1] && sorted(arr,i+1);
     }
     */
+     
+      /*
+    public static int linsea(int [] arr,int target,int i)
+    {
+        if(i==arr.length){
+            return -1;
+        }
+        if(arr[i]==target)
+        {
+        return i;
+        }
+        else
+        {
+        return target==arr[i] || linsea(arr,target,i+1);
+        }
+    }
+     */
+
     
 }
