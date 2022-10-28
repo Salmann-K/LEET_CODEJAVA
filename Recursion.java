@@ -333,5 +333,29 @@ public class Recursion {
         reverse(n/10);
     }
     */
+     
+     /*
+    public static int count=0;
+    static void countz(int n)
+    {
+        if(n==0){
+            return ;
+        }
+        if(n%10==0){
+            count++;
+        }
+        countz(n/10);
+    }
+     */
+
+    /*
+    public static boolean sorted(int [] arr,int i)
+    {
+        if(i==arr.length-1){
+            return true;
+        }
+        return arr[i]<arr[i+1] && sorted(arr,i+1);
+    }
+    */
     
 }
