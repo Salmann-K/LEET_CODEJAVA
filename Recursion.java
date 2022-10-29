@@ -3,6 +3,32 @@ package com.company.UPLOAD;
 public class Recursion {
      
      /*
+    Problem 1922
+    public static int modu=(int)1e9+7;
+    public static int countGoodNumbers(long n) {
+        if(n%2==0){
+            long a1= powerfunc(4,n/2);
+            long b1= powerfunc(5,n/2);
+            long c=a1*b1 %modu;
+            return (int)(c);
+        }else{
+            long a1= powerfunc(4,n/2);
+            long b1= powerfunc(5,(n/2)+1);
+            long c=a1*b1%modu;
+            return (int)(c);
+        }
+    }
+    // power function
+    public static long powerfunc(long x, long y){
+        long temp;
+        if(y==0) return 1;
+        temp= powerfunc(x,y/2);
+        if(y%2==0) return (temp*temp)%modu;
+        else return (x*temp*temp)%modu;
+    }
+     */
+     
+     /*
         public static int count =0;
     public static int numberOfSteps(int num) {
         if(num==0)
