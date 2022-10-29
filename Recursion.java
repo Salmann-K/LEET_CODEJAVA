@@ -2,6 +2,20 @@ package com.company.UPLOAD;
 
 public class Recursion {
      
+      /*
+    //Problem 779
+    public static int kthGrammar(int n, int k) {
+        if(n==1 || k==1){  //base condition- because every 1st row contains 0
+            return 0;
+        }
+        int middle = (int)(Math.pow(2,n-1)/2);  //find middle element
+        if(k<=middle){                          //if k lies in 1st half, return the previous row
+            return kthGrammar(n-1, k);
+        }
+        return (kthGrammar(n-1, k-middle)^1);  //else, return the complement of 2nd half by taking XOR
+    }
+*/
+     
      /*
     Problem 1922
     public static int modu=(int)1e9+7;
