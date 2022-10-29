@@ -3,6 +3,31 @@ package com.company.UPLOAD;
 public class Recursion {
      
       /*
+    // Problem 50
+    public static double myPow(double x, int n) {
+        double a=x;
+        if(n==0)
+            return (double)1;
+        if(n>0){
+            a=positive(x,n);
+        }
+        else{
+            a=1/positive(x,n);
+        }
+        return a;
+    }
+    static double positive(double x,int n){
+        if(n==0)
+            return 1;
+        double temp=positive(x,n/2);
+        if(n%2==0)
+            return temp*temp;
+        else
+            return temp*temp*x;
+    }
+*/
+     
+      /*
     //Problem 779
     public static int kthGrammar(int n, int k) {
         if(n==1 || k==1){  //base condition- because every 1st row contains 0
