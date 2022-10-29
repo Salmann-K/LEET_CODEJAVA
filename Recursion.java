@@ -389,6 +389,32 @@ public class Recursion {
         findallindex(arr,target,i+1);
     }
     */
+     
+      /*
+    public static int searchrotatedsorted(int [] arr,int target , int s, int e)
+    {
+        if(s>e){
+            return -1;
+        }
+        int mid = s+(e-s)/2;
+        if(arr[mid]== target){
+            return mid;
+        }
+
+        if(arr[s]<=arr[mid]){
+            if(target>=arr[s] && target<=arr[mid]){
+                return searchrotatedsorted(arr,target,s,mid-1);
+            }
+            else{
+                return searchrotatedsorted(arr,target,mid+1,e);
+            }
+        }
+        if (target >= arr[mid] && target<=arr[e]) {
+            return searchrotatedsorted(arr,target,mid+1,e);
+        }
+            return searchrotatedsorted(arr,target,s,mid-1);
+    }
+*/
 
     
 }
