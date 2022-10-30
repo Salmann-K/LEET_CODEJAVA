@@ -244,6 +244,37 @@ public class Recursion {
         }
     }
 */
+     
+      /*
+    //Recursive Digit Sum // Hackerrank
+    public static int superDigit(String n, int k) {
+        if (n.length() > 1){
+            long sum = 0;
+            for (int i = 0; i < n.length(); i++){
+                sum += Character.getNumericValue(n.charAt(i));
+            }
+            return superDigit(Long.toString(sum * k), 1);
+        }
+        else   {
+            return Character.getNumericValue(n.charAt(0));
+
+        }
+    }
+     */
+
+    /*
+    static int count(int N)
+    {
+       if(N==0){
+           return 1;
+       }
+       int ans=0;
+        for(int i=0;i<N;i+=2){
+            ans+= count(i)*count(N-2-i);
+        }
+        return ans;
+    }
+    */
 
 
      /*
