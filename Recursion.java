@@ -188,6 +188,25 @@ public class Recursion {
             return spfib(n-1)^spfib(n-2);
     }
      */
+     
+      /*
+    // **** *** ** * This Pattern Using Recursion 1
+    public static void pattern(int r,int c)
+    {
+        if(r==0){
+            return;
+        }
+      if(r>c){
+          System.out.print("*");
+          pattern(r,c+1);
+      }
+      else{
+          System.out.println();
+          pattern(r-1,0);
+      }
+    }
+*/
+
 
      /*
     static int fibo(int n)
