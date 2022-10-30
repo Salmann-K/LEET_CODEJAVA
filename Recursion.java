@@ -289,6 +289,29 @@ public class Recursion {
     }
      */
     
+      /*
+    public static void selectionsort(int [] arr , int r, int c,int max)
+    {
+        if(r==0){
+            return;
+        }
+        if(r>c){
+            if(arr[c]>arr[max]){
+                selectionsort(arr,r,c+1,c);
+            }
+            else
+            {
+                selectionsort(arr,r,c+1,max);
+            }
+        }
+        else{
+            int temp=arr[r-1];
+            arr[r-1]=arr[max];
+            arr[max]=temp;
+            selectionsort(arr,r-1,0,0);
+        }
+    }
+*/
      
      /*
     static int min(int [] arr,int n)
