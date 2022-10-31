@@ -274,6 +274,45 @@ public class Recursion {
 */
      
       /*
+    public static void mergesortinplace(int [] arr, int s, int e)
+    {
+        if(e-s==1){
+            return;
+        }
+        int mid=(s+e)/2;
+        mergesortinplace(arr,0,mid);
+        mergesortinplace(arr,mid,e);
+
+        mergeinplace(arr,s,mid,e);
+    }
+    public static void mergeinplace(int [] arr, int s, int mid, int e)   {
+        int [] mix=new int[e-s];
+        int i=s,j=mid,k=0;
+        while(i< mid && j< e) {
+            if(arr[i]<arr[j]){
+                mix[k]=arr[i];
+                i++;
+            }
+            else{
+                mix[k]= arr[j];
+                j++;
+            }k++;
+        }
+        while(i< mid){
+            mix[k]= arr[i];
+            k++; i++;
+        }
+        while(j< e){
+            mix[k]= arr[j];
+            k++; j++;
+        }
+        for (int l = 0; l < mix.length; l++) {
+            arr[s+l]=mix[l];
+        }
+    }
+*/
+     
+      /*
     // * ** *** **** pattern using Recursion 2
     public static void pattern(int r,int c)
     {
