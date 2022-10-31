@@ -190,6 +190,35 @@ public class Recursion {
      */
      
       /*
+    public static int findTheWinner(int n, int k) {
+        ArrayList<Integer> al = new ArrayList<>();
+        int start = 0, check = 1;
+        for (int i = 1; i <= n; i++) {
+            al.add(i);
+        }
+        return resultTheWinner(al, k, start, check);
+    }
+    public static int resultTheWinner(ArrayList<Integer> al,int k,int start,int check)
+    {
+        if(al.size()==1){
+            return al.get(0);
+        }
+        if(start>=al.size())
+            start=0;
+        if(check==k){
+            al.remove(start);
+            check=1;
+            return resultTheWinner(al,k,start,check);
+        }
+         else{
+            check++;
+            start++;
+            return resultTheWinner(al,k,start,check);
+        }
+    }
+     */
+     
+      /*
     // **** *** ** * This Pattern Using Recursion 1
     public static void pattern(int r,int c)
     {
