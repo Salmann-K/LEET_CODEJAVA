@@ -313,6 +313,42 @@ public class Recursion {
 */
      
       /*
+    FInding Prime Between 0 and N
+    public static boolean Isprime(int n)
+    {
+        int c=2;
+        while(c*c<=n)
+        {
+            if(n%c==0)
+            {
+                return false;
+            }
+            c++;
+        }
+        return true;
+    }
+     */
+
+    /*
+    // Reversing A String Using Recursion
+    static void recursiveReverse(char[] str, int i)
+    {
+        int n = str.length;
+        if (i == n / 2)
+            return;
+        swap(str,i,n - i - 1);
+        recursiveReverse(str, i + 1);
+    }
+    static void swap(char []arr, int i, int j)
+    {
+        char temp= arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+    }
+    */
+
+     
+      /*
     // * ** *** **** pattern using Recursion 2
     public static void pattern(int r,int c)
     {
