@@ -518,7 +518,22 @@ public class Recursion {
     }
     */
 
-     
+      /*
+    // Skipping A String In Another String
+    private static String skipString(String s1, String s2,int len) {
+        if(s1.isEmpty()){
+        return "";
+        }
+        if(s1.startsWith(s2))  {
+        return skipString(s1.substring(len),s2,len);
+        }
+        else {
+            return s1.charAt(0)+skipString(s1.substring(1),s2,len);
+        }
+    }
+    */
+
+   
       /*
     // * ** *** **** pattern using Recursion 2
     public static void pattern(int r,int c)
