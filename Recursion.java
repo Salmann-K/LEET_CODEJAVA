@@ -489,6 +489,37 @@ public class Recursion {
      */
      
       /*
+    // Remove adjacent duplicate characters from a string
+    static StringBuilder sb = new StringBuilder();
+    private static String removeAdjacent(String s, int st) {
+        // Base Condition
+        if(st==s.length()-1){
+        return sb.toString();
+        }
+
+        if(st==1){
+            sb.append(s.charAt(0));
+        }
+        if(s.charAt(st)!=s.charAt(st-1)){
+            sb.append(s.charAt(st));
+        }
+        return removeAdjacent(s,st+1);
+    }
+    */
+
+    /*
+    // Reverse a string using recursion
+    private static String reverse(String s , int st , String rev) {
+        if(st<0)  {
+            return rev;
+        }
+        rev=rev+s.charAt(st);
+        return reverse(s,st-1,rev);
+    }
+    */
+
+     
+      /*
     // * ** *** **** pattern using Recursion 2
     public static void pattern(int r,int c)
     {
