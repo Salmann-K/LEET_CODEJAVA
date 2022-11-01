@@ -444,6 +444,49 @@ public class Recursion {
     }}
 */
 
+       /*
+    // Find the peak element in an array Using Recursion
+    public static int findPeakElement(int[] nums, int left, int right)
+    {
+        // find the middle element. To avoid overflow, use mid = low + (high - low) / 2
+        int mid = (left + right) / 2;
+        // check if the middle element is greater than its neighbors
+        if ((mid == 0 || nums[mid - 1] <= nums[mid]) &&
+                (mid == nums.length - 1 || nums[mid + 1] <= nums[mid])) {
+            return mid;
+        }
+        // If the left neighbor of `mid` is greater than the middle element,
+        // find the peak recursively in the left subarray
+        if (mid - 1 >= 0 && nums[mid - 1] > nums[mid]) {
+            return findPeakElement(nums, left, mid - 1);
+        }
+        // If the right neighbor of `mid` is greater than the middle element,
+        // find the peak recursively in the right subarray
+        return findPeakElement(nums, mid + 1, right);
+    }
+    public static int findPeakElement(int[] nums)
+    {
+        // base case
+        if (nums == null || nums.length == 0) {
+            System.exit(-1);
+        }
+        int index = findPeakElement(nums, 0, nums.length - 1);
+        return nums[index];
+    }
+*/
+
+    /*
+    // Determine whether a string is a palindrome or not
+    private static boolean isPalindrome(String s , int st ,int e) {
+        if(st>e){
+            return true;
+        }
+        if(s.charAt(st)!=s.charAt(e)){
+            return false;
+        }
+        return isPalindrome(s,(st+1),(e-1));
+    }
+     */
      
       /*
     // * ** *** **** pattern using Recursion 2
