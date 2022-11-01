@@ -256,6 +256,56 @@ public class Recursion {
     */
      
       /*
+    // Quicksort
+    public static void quicksort(int [] arr , int low , int high)
+    {
+        if(low>=high)  {
+            return;
+        }
+        int s=low;
+        int e=high;
+        int mid=s+(e-s)/2;
+        int pivot=arr[mid];
+        while(s<=e){
+            while(arr[s]<pivot){
+                s++;
+            }
+            while(arr[e]>pivot){
+                e--;
+            }
+            if(s<=e){
+                int temp=arr[s];
+                arr[s]=arr[e];
+                arr[e]=temp;
+                s++;
+                e--;
+            }
+        }
+        quicksort(arr,low,e);
+        quicksort(arr,s,high);
+    }
+    */
+
+     /*
+        // Replace every array element with the product of every other element
+        // without using a division operator
+        public static int findProduct(int[] arr, int n, int left, int i)
+        {// base case: no elements left on the right
+        if (i == n) {
+            return 1;
+        }
+        // take backup of the current element
+        int curr = arr[i];
+        // calculate the product of the right subarray
+        int right = findProduct(arr, n, left * arr[i], i + 1);
+        // replace the current element with the product of the left and right subarray
+        arr[i] = left * right;
+        // return product of right the subarray, including the current element
+        return curr * right;
+    }
+     */
+     
+      /*
     // **** *** ** * This Pattern Using Recursion 1
     public static void pattern(int r,int c)
     {
