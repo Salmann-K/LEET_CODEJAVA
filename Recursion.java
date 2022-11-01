@@ -396,6 +396,53 @@ public class Recursion {
         arr[j]=temp;
     }
     */
+     
+      /*
+    // Add elements of two arrays into a new array
+    public static void split_number(int num, List<Integer> result)
+    {
+        if (num > 0){
+            split_number(num/10, result);
+            result.add(num % 10);
+        }
+    }
+    public static void add(int[] a, int[] b, List<Integer> result)
+    {
+        int m = a.length, n = b.length;
+        // loop till either `a` or `b` runs out
+        int i = 0;
+        while (i < m && i < n){
+            // get the sum of the next element from each array
+            int sum = a[i] + b[i];
+            // separate the digits of the sum and add them to the output list
+            split_number(sum, result);
+            i++;
+        }
+        // process remaining elements of the first list, if any
+        while (i < m) {
+            split_number(a[i++], result);
+        }
+        // process remaining elements of the second list, if any
+        while (i < n) {
+            split_number(b[i++], result);
+        }
+    }
+*/
+
+      /*
+    // Find the smallest missing element from a sorted array
+    private static int smallMissing(int[] nums , int left ,int right) {
+    if(left>right){
+        return left;
+    }
+    int mid= left+(right-left)/2;
+    if(nums[mid]==mid){
+        return smallMissing(nums,mid+1,right);
+    }
+    else{
+        return smallMissing(nums,left,mid-1);
+    }}
+*/
 
      
       /*
