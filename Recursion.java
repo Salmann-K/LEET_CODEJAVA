@@ -565,6 +565,38 @@ public class Recursion {
         return left;
     }
     */
+     
+      /*
+    // Subset With Ascii without Arraylist
+    private static void subseqAscii(String p, String up) {
+        if(up.isEmpty()){
+            System.out.println(p);
+            return;
+        }
+        char c=up.charAt(0);
+        subseqAscii(p+c,up.substring(1));
+        subseqAscii(p,up.substring(1));
+        subseqAscii(p+(c+0),up.substring(1));
+    }
+    */
+    /*
+    // Subset With Ascii with Arraylist
+    private static ArrayList<String> subseqretASCII(String p, String up) {
+        if(up.isEmpty()){
+            ArrayList<String> al = new ArrayList<>();
+            al.add(p);
+            return al;
+        }
+        char c=up.charAt(0);
+        ArrayList<String> first = subseqretASCII(p+c,up.substring(1));
+        ArrayList<String> second = subseqretASCII(p,up.substring(1));
+        ArrayList<String> third = subseqretASCII(p+(c+0),up.substring(1));
+        first.addAll(second);
+        first.addAll(third);
+        return first;
+    }
+     */
+
    
       /*
     // * ** *** **** pattern using Recursion 2
