@@ -533,6 +533,38 @@ public class Recursion {
     }
     */
 
+     
+        /////////////////////////
+        // SubSet And Subsequence
+        /////////////////////////
+
+        /*
+    // Subset without Arraylist
+    private static void subseq(String p, String up) {
+        if(up.isEmpty()){
+            System.out.println(p);
+            return;
+        }
+        char c=up.charAt(0);
+        subseq(p+c,up.substring(1));
+        subseq(p,up.substring(1));
+    }
+    */
+    /*
+    // Subset With Arraylist
+    private static ArrayList<String> subseqret(String p, String up) {
+        if(up.isEmpty()){
+            ArrayList<String> al = new ArrayList<>();
+            al.add(p);
+            return al;
+        }
+        char c=up.charAt(0);
+        ArrayList<String> left = subseqret(p+c,up.substring(1));
+        ArrayList<String> right = subseqret(p,up.substring(1));
+        left.addAll(right);
+        return left;
+    }
+    */
    
       /*
     // * ** *** **** pattern using Recursion 2
