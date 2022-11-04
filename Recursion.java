@@ -778,6 +778,65 @@ public static void dicecomb(String p, int target)
  */
      
       /*
+// Printing Permutation In Sorted Order
+public static List<String> permutation(String S) {
+ArrayList<String> res = new ArrayList<>();
+res=permutationfi("",S);
+res.sort(Comparator.naturalOrder());
+return res;
+}
+public static ArrayList<String> permutationfi(String p , String up){
+    if(up.isEmpty())
+    {
+        ArrayList<String> al = new ArrayList<>();
+        al.add(p);
+        return al;
+    }
+    ArrayList<String> ans = new ArrayList<>();
+    char ch = up.charAt(0);
+    for (int i = 0; i <=p.length() ; i++) {
+        String f = p.substring(0,i);
+        String s = p.substring(i,p.length());
+        ans.addAll(permutationfi(f+ch+s,up.substring(1)));
+    }
+    return ans;
+}
+*/
+
+/*
+// Printing Permutation In Sorted Order and Removing Duplicate
+public static List<String> find_permutation(String S) {
+ArrayList<String> res = new ArrayList<>();
+res=permutationfi("",S);
+res.sort(Comparator.naturalOrder());
+    int j=0;
+    for (int i = 1; i < res.size() ; i++) {
+        if(res.get(j).equals(res.get(i))){
+            res.remove(res.get(i));
+        }
+        j++;
+    }
+return res;
+}
+public static ArrayList<String> permutationfi(String p , String up){
+    if(up.isEmpty()) {
+        ArrayList<String> al = new ArrayList<>();
+        al.add(p);
+        return al;
+    }
+    ArrayList<String> ans = new ArrayList<>();
+    char ch = up.charAt(0);
+    for (int i = 0; i <=p.length() ; i++) {
+        String f = p.substring(0,i);
+        String s = p.substring(i,p.length());
+        ans.addAll(permutationfi(f+ch+s,up.substring(1)));
+    }
+    return ans;
+}
+*/
+
+     
+      /*
     // * ** *** **** pattern using Recursion 2
     public static void pattern(int r,int c)
     {
