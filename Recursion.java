@@ -732,6 +732,52 @@ private static void phoneopad(String p ,String up) {
      */
      
       /*
+    // letter combination count
+private static int phonepadcount(String p ,String up) {
+    if(up.isEmpty()){
+        return 1;
+    }
+    int count=0;
+    int digit=(up.charAt(0)-'0');
+    for (int i = (digit-1)*3 ; i < digit*3 ; i++) {
+        char ch = (char)('a'+i);
+        count=count+phonepadcount(p+ch,up.substring(1));
+    }
+    return count;}
+ */
+
+    /*
+    // Dice combination Printing
+public static void dicecomb(String p, int target)
+{
+    if(target==0){
+        System.out.println(p);
+        return;
+    }
+    for (int i = 1; i < 6 && i<target ; i++) {
+        dicecomb(p+i,target-1);
+    }
+}
+ */
+
+/*
+    // Dice combination Arraylist
+    public static ArrayList<String> dicecombret(String p, int target)
+    {
+        if(target==0){
+            ArrayList<String> list = new ArrayList<>();
+            list.add(p);
+            return list;
+        }
+        ArrayList<String> list = new ArrayList<>();
+        for (int i = 1; i < 6 && i<target ; i++) {
+            list.addAll(dicecombret(p+i,target-1));
+        }
+        return list;
+    }
+ */
+     
+      /*
     // * ** *** **** pattern using Recursion 2
     public static void pattern(int r,int c)
     {
