@@ -672,6 +672,34 @@ public class Recursion {
     */
      
       /*
+    // Permutation Count
+    public static int permutationcount(String p, String up) {
+        if (up.isEmpty()) {
+            return 1;
+        }
+        char ch = up.charAt(0);
+        int count = 0;
+        for (int i = 0; i <= p.length(); i++) {
+            String f = p.substring(0, i);
+            String s = p.substring(i, p.length());
+            count = count + permutationcount(f + ch + s, up.substring(1));
+        }
+        return count;
+    }
+     */
+
+    /*
+    //Decimal To Binary Using Recursion
+    public static int dectobin(int x){
+    if(x==0){
+        return 0;
+    }
+    return x%2+10*dectobin(x/2);
+    }
+    */
+
+     
+      /*
     // * ** *** **** pattern using Recursion 2
     public static void pattern(int r,int c)
     {
