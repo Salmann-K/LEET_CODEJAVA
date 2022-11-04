@@ -697,7 +697,39 @@ public class Recursion {
     return x%2+10*dectobin(x/2);
     }
     */
+     
+          
+    /*
+    // letter combination printing only
+private static void phoneopad(String p ,String up) {
+    if(up.isEmpty()){
+        System.out.println(p);
+        return;
+    }
+    int digit=(up.charAt(0)-'0');
+    for (int i = (digit-1)*3 ; i < digit*3 ; i++) {
+        char ch = (char)('a'+i);
+        phonepad(p+ch,up.substring(1));
+    }}
+     */
 
+    /*
+    // Letter Combination With Arraylist
+    private static ArrayList<String> phonepadret(String p ,String up) {
+        if(up.isEmpty()){
+            rrayList<String> list = new ArrayList<>();
+            list.add(p);
+            return list;A
+        }
+        ArrayList<String> list = new ArrayList<>();
+        int digit=(up.charAt(0)-'0');
+        for (int i = (digit-1)*3 ; i < digit*3 ; i++) {
+            char ch = (char)('a'+i);
+            list.addAll(phonepadret(p+ch,up.substring(1)));
+        }
+        return list;
+    }
+     */
      
       /*
     // * ** *** **** pattern using Recursion 2
