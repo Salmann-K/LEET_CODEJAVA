@@ -1030,6 +1030,21 @@ static ArrayList<Integer> ans(int n, ArrayList<Integer> list){
         }
     }
      */
+     
+      /*
+    Tower Of Hanoi
+    public long toh(int N, int from, int to, int aux) {
+        if(N == 0){
+            return 0;
+        }
+        //Moving Disks from Source to Auxilliary using Destination.
+        long steps = toh(N-1, from, aux, to);
+        System.out.println("move disk "+N+" from rod "+from+" to rod "+to);
+        //Moving Disks from  Auxilliary to Destination using Source.
+        steps += toh(N-1, aux, to , from);
+        return steps+1;
+    }
+*/
     
      /*
     static int length(String str)
