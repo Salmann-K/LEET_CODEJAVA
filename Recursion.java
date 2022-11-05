@@ -835,6 +835,23 @@ public static ArrayList<String> permutationfi(String p , String up){
 }
 */
 
+      /*
+// Print a sequence of numbers starting with N where A[0] = N, without using
+// loop, in which  A[i+1] = A[i] - 5,  until A[i] > 0. After that A[i+1] = A[i] + 5  repeat it until A[i] = N.
+
+static List<Integer> pattern(int N){
+    return ans(N, new ArrayList<Integer>());
+}
+
+static ArrayList<Integer> ans(int n, ArrayList<Integer> list){
+        if(n > 0){
+            list.add(n);
+            ans(n - 5, list); //stacking calls
+        }
+        list.add(n); //getting data on return.
+        return list;
+}
+*/
      
       /*
     // * ** *** **** pattern using Recursion 2
