@@ -1,1 +1,35 @@
+public class OOPS {
+    public static void main(String[] args) {
+        student [] st = new student[3];  // Declaring The Objects
+        //System.out.println(Arrays.toString(st));
+        st[0]=new student(); // Initialising
+        // If Print Before Accessing it will give default values of data type
+        st[0].rn=97;  // Accessing
+        st[0].name="Salman";
+        st[0].marks=89.56f;
+        System.out.println(st[0].rn);
+        System.out.println(st[0].name);
+        System.out.println(st[0].marks);
+//      System.out.println(st[0].salary); // Cant access things which are not in class
+
+        student Salman = new student();  // Declaring And Initialising together        Salman.rn=35;
+        System.out.println(Salman.rn);
+
+
+        //////////////// Constructor ////////////////
+
+        student himanshu= new student();
+        student Ujjawal= new student(63,"UJJAWAL BHATT",89.75f);
+        System.out.println(himanshu.name);  // Accessing Using constructor
+        System.out.println(Ujjawal.rn);
+        System.out.println(Ujjawal.name);
+        System.out.println(Ujjawal.marks);
+
+        himanshu.greeting();
+        Ujjawal.greeting();
+        himanshu.changename("Rohit");
+        Ujjawal.changename("Udit");
+        System.out.println("\nAfter Changing The Name Using function Inside The Class\n");
+        himanshu.greeting();
+        Ujjawal.greeting();
 
