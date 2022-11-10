@@ -57,3 +57,41 @@ public class OOPS {
 
     }
 }
+
+class student {
+    int rn;
+    String name;
+    float marks;
+
+    void changename(String Name){
+        this.name=Name;
+
+    }
+    void greeting (){
+        System.out.println("Hello My Name Is "+this.name);
+    }
+    // Taking Values In One Object From Another Object
+    student(student other){
+        this.name= other.name;
+        this.rn= other.rn;
+        this.marks= other.marks;
+    }
+    //constructor
+//    student(){
+//    this.rn=15;
+//    this.name="Himanshu Bisht";
+//    this.marks=89.32f;
+//    }
+
+    // Calling A Constructor Inside another Constructor
+    student(){
+
+        // Internally It Is Something Like : new strudent()
+        this (17,"Random 2",100f);
+    }
+    student(int roll,String Name , float MArks){
+        this.rn=roll;
+        this.name=Name;
+        this.marks=MArks;
+    }
+}
