@@ -1,1 +1,90 @@
 
+package com.company.dsajava.OOPS;
+
+public class INTERFACE {
+    public static void main(String[] args) {
+
+        Car car = new Car();
+
+        car.acc();
+        car.start();
+        car.stop();
+        car.brakes();
+
+        //mutimedia carme = new Car();
+        // carme.start(); Giving Same Output As Engine Start Because Of The Same Name
+        // So We create Different classes
+        Media carm = new Media();
+        carm.start();
+        carm.stop();
+
+        nicecar ca = new nicecar();
+        ca.start();
+        ca.startmusic();
+    }
+}
+
+interface engine{
+    void start();
+    void stop();
+    void acc();
+}
+
+interface brake{
+    void brakes();
+}
+
+interface mutimedia{
+    void start();
+    void stop();
+}
+
+class Car implements engine , brake{
+    @Override
+    public void start() {
+        System.out.println("Starting Like A Normal Car");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("Stopping Like A Normal Car");
+    }
+
+    @Override
+    public void acc() {
+        System.out.println("Accelerating Like A Normal Car");
+    }
+
+    @Override
+    public void brakes() {
+        System.out.println("Braking Like A Normal Car");
+    }
+}
+
+class powerengine implements engine{
+    @Override
+    public void start() {
+        System.out.println("Starting PowerEngine");
+    }
+    @Override
+    public void stop() {
+        System.out.println("Stopping PowerEngine");
+    }
+
+    @Override
+    public void acc() {
+        System.out.println("Accelerating PowerEngine");
+    }
+}
+
+class Media implements mutimedia{
+    @Override
+    public void start() {
+        System.out.println("Starting The Music");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("Stoping The Music");
+    }
+}
