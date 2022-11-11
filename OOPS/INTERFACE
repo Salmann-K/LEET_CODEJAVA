@@ -88,3 +88,77 @@ class Media implements mutimedia{
         System.out.println("Stoping The Music");
     }
 }
+
+
+class nicecar{
+    private engine Engine;
+    private mutimedia player = new Media();
+    public nicecar() {
+        Engine = new powerengine();
+    }
+
+    public nicecar(engine Engi) {
+        this.Engine = Engi;
+    }
+
+    public void start(){
+         Engine.start();
+    }
+    public void stop(){
+        Engine.stop();
+    }
+    public void startmusic(){
+        player.start();
+    }
+    public void stoptmusic(){
+        player.stop();
+    }
+}
+
+/// Extend In Interface
+
+interface Z{
+    void fun();
+}
+
+interface B extends Z{
+    void greeting();
+}
+class intext implements B{
+
+    // Here Even though we Are implementing B . Still we Have To implement Both The Methods of A And
+    // B Because B Is extending A
+    @Override
+    public void fun() {
+        System.out.println("I Am Enjoying");
+    }
+
+    @Override
+    public void greeting() {
+        System.out.println("Good Morning Salman, Its A Great Day");
+    }
+}
+
+interface Z1{
+    default void fun(){
+        System.out.println("I Am Default in Interface Z");
+    }
+}
+
+interface B1 extends Z1{
+    void greeting();
+//    void fun();
+
+    // since we declared the method default in Z1 we dont need to implement the method here.
+    // And When We Call The method In Main function Then It Will Print The Default one Implementations
+    // If There Is multile Methods Of Same Name And We Declare them All With Default Then It Will
+    // Give error
+
+    //static void dont();
+    // Static Interface Methods Should Have A Body
+    // Call Them Via Interface Name
+    static void dont(){
+        System.out.println("I Am Static Interface Method");
+    }
+}
+
