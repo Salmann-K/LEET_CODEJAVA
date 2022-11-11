@@ -162,3 +162,47 @@ interface B1 extends Z1{
     }
 }
 
+class intext1 implements B1{
+
+
+    @Override
+    public void greeting() {
+        System.out.println("Good Morning Salman, Its A Great Day");
+    }
+
+    public static void main(String[] args) {
+        intext1 an = new intext1();
+        an.fun();
+        // Its Calling Default One
+
+        // To Access Static Interface Methods
+        // WE Need To CAll Them With interface name
+        B1.dont();
+    }
+}
+
+// NESTED INTERFACE
+
+class nat{
+    //nested interface
+    public interface Nestedinterface{
+        boolean  isOdd(int n);
+    }
+}
+
+// To Implement nested we need to put ( classname.interfacename )
+// Nested Interface Can BE Declared Public Protected private
+// Whereas The Top Level Interface Can be Declared As Private or Default onlyA
+class nat2 implements nat.Nestedinterface{
+
+    @Override
+    public boolean isOdd(int n) {
+        return (n & 1)==1;
+    }
+}
+class Main{
+    public static void main(String[] args) {
+        nat2 n2 = new nat2();
+        System.out.println(n2.isOdd(4));
+    }
+}
