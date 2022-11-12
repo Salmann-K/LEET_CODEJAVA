@@ -35,3 +35,29 @@ public class OOPS {
         himanshu.greeting();
         Ujjawal.greeting();
 
+
+
+        // Taking Values In One Object From Another Object
+        System.out.println("\nTook Values From One Object And Putted It In Another\n");
+        student random = new student(Ujjawal);
+        System.out.println(random.rn);
+        System.out.println(random.name);
+        System.out.println(random.marks);
+
+        // For Calling A Constructor Inside Another Constructor
+        System.out.println("\nprinting Values After Calling A Constructor Inside Another Constructor\n");
+        student random2 = new student();
+        System.out.println(random2.rn);
+        System.out.println(random2.name);
+        System.out.println(random2.marks);
+
+        // Two reference variable Pointing To Same Objects
+        student one = new student();
+        student two = one;
+
+        one.name="Something Something";
+        System.out.println(two.name);
+
+
+    }
+}
