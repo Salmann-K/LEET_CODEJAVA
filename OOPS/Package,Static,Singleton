@@ -51,3 +51,48 @@ public class PackagesStaticSingelton {
         // Main And Its Object Will Gonna Be Created
     }
 }
+
+
+class sol {
+    int age;
+    String name;
+    int salary;
+    boolean married;
+    static int population;
+    public sol(int age, String name, int salary, boolean married) {
+        this.age = age;
+        this.name = name;
+        this.salary = salary;
+        this.married = married;
+        // We Can Replace The "this" keyword With Class Name. Because Static Are Used With Class Name
+        // this.population+=1;
+        sol.population += 1;
+    }
+    static void greeting(){
+        System.out.println("Hello How R U ");
+        // System.out.println(this.name);
+        // We Cannot Use "this" Keyword Inside The Static method because It Is dependent On Object
+    }
+}
+// How To Initialise Static Variable using Static Block
+class Staticblock{
+    static int a=10;
+    static int b;
+    // Will Only run Once , when The First Object Is created i.e. When the class Is Loaded For First Time
+    static {
+        System.out.println("I Am Inside Static Block");
+        b=a*12;
+    }
+    public static void main(String[] args) {
+        Staticblock obj = new Staticblock();
+        System.out.println(Staticblock.a+" "+Staticblock.b);
+
+        Staticblock.b+=15;
+        System.out.println(Staticblock.a+" "+Staticblock.b);
+
+        // This Time The Static Block Will Not Gonna Run Again
+        Staticblock obj2 = new Staticblock();
+        System.out.println(Staticblock.a+" "+Staticblock.b);
+
+    }
+}
