@@ -96,3 +96,68 @@ class Staticblock{
 
     }
 }
+
+
+
+///////////////////// CLASS INSIDE A CLASS ///////////////////////////
+
+
+/// If Its Outside It Don't Need An Static.
+class inner{
+    static String name;
+
+    public inner(String name) {
+        inner.name = name;
+    }
+}
+class outerclass{
+// The Class Inside A Class Needs To Be Static Because if It Is Not Static Then It Will be Dependent
+// On The Outer Class. Hence we Need To make Instance Of The Outer Class To use The Inside The Class.
+    static class inner{
+        String name;
+        public inner(String name) {
+            this.name = name;
+        }
+    }
+
+    public static void main(String[] args) {
+        inner a = new inner("Salman");
+        inner b = new inner("Himanshu");
+
+        // When Outside It Will Give b.name Twice
+        System.out.println(a.name);
+        System.out.println(b.name);
+
+        // When Inside It Will Give a.name & b.name
+        System.out.println(a.name);
+        System.out.println(b.name);
+    }
+}
+
+/////////////////////////// Singleton Class ////////////////////////////////////
+
+// A Class Whose Only One Instance Can Be Made . if Others reference variable are being Made They
+// Will Pointing To The Same Instance
+class Singleton {
+    private Singleton(){
+
+    }
+    private static Singleton instance;
+    public static Singleton getInstance(){
+        if(instance==null){
+            instance= new Singleton();
+        }
+
+        return instance;
+    }
+
+}
+
+class Maine {
+    public static void main(String[] args) {
+        Singleton a = Singleton.getInstance();
+        Singleton b = Singleton.getInstance();
+
+        // both Of The reference variable Are Pointing To The Same Object    }
+    }
+}
