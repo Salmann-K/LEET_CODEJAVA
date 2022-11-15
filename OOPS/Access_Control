@@ -1,1 +1,43 @@
+package com.company.dsajava.OOPS;
 
+public class ACCESSCONTROL {
+
+}
+class a{
+    private int n;
+    protected String s;
+    int [] arr;
+    // If There Is No Access modifier Then It Is Default Which Means It Can be Accessed Within The Package
+    public a(int n, String s) {
+        this.n = n;
+        this.s = s;
+        this.arr = new int[n];
+    }
+    public int getN() {
+        return n;
+    }
+    public void setN(int n) {
+        this.n = n;
+    }
+
+    public static void main(String[] args) {
+
+        a obj = new a(10,"Salman");
+        //obj.n; Cant Access It Directly because Its Private can Access Using Getter And Setter
+        System.out.println(obj.s);
+
+    }
+}
+
+class sub extends a{
+
+    sub(int n , String s){
+        super(n,s);
+    }
+
+    public static void main(String[] args) {
+        sub b = new sub(35,"Salman");
+        int a= b.getN();
+        String ba=b.s;
+    }
+}
