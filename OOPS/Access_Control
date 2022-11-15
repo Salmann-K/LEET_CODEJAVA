@@ -74,3 +74,36 @@ class Objectdemo{
     protected Object clone() throws CloneNotSupportedException {
         return super.clone();
     }
+
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+    }
+
+
+
+    public static void main(String[] args) {
+        Objectdemo od1 = new Objectdemo(15,35.7f);
+        Objectdemo od2 = new Objectdemo(15,42.8f);
+
+//        System.out.println(od1.hashCode()); // Basically Some Randon Number For Objects
+//        System.out.println(od2.hashCode());
+
+        if(od1.equals(od2)){
+            System.out.println("od1 equal od2");
+        }
+        if(od1==od2){
+            System.out.println("od1 equal od2");
+        }
+
+        System.out.println(od1 instanceof Objectdemo);
+
+        System.out.println(od1.getClass());
+    }
+}
