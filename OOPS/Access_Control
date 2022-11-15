@@ -41,3 +41,36 @@ class sub extends a{
         String ba=b.s;
     }
 }
+
+
+class Objectdemo{
+    int num;
+    float n;
+//    public Objectdemo(int num) {
+//        this.num = num;
+//    }
+
+    public Objectdemo(int num,float n) {
+        this.num = num;
+        this.n=n;
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+//    @Override
+//    public boolean equals(Object obj) {
+//        return super.equals(obj);
+//    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return this.num==((Objectdemo)obj).num;
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
