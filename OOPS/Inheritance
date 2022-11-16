@@ -87,3 +87,37 @@ class Boxweight extends Box{
         // We need To Declare Parent Class First Or Call Them First If Needed
     }
 
+
+    public Boxweight(Boxweight other) {
+        super(other);
+        weight=this.weight;
+    }
+
+    public Boxweight(double side, double weight) {
+        super(side);
+        this.weight=weight;
+    }
+}
+
+class Boxprice extends Boxweight{
+    double cost;
+
+    Boxprice(){
+        this.cost =-1;
+    }
+
+    Boxprice(Boxprice other) {
+        super(other);
+        this.cost = other.cost;
+    }
+
+    public Boxprice(double l, double w, double h, double weight, double cost) {
+        super(l, w, h, weight);
+        this.cost = cost;
+    }
+
+    public Boxprice(double side, double weight, double cost) {
+        super(side, weight);
+        this.cost = cost;
+    }
+}
