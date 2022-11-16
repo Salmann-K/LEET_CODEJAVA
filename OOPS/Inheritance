@@ -43,3 +43,47 @@ class Box{
      this.h=-1;
     }
 
+  // For Cube
+    Box(double side){
+        super();
+        // We Can Also Call super In Parent Class Because Every Class Is Derived From Object
+        // Class . Hence It Will Not Give Any Error.
+        this.l=side;
+        this.w=side;
+        this.h=side;
+    }
+    public Box(double l, double w, double h) {
+        this.l = l;
+        this.w = w;
+        this.h = h;
+    }
+    Box(Box old){
+        this.l=old.l;
+        this.w=old.w;
+        this.h=old.h;
+    }
+}
+
+class Boxweight extends Box{
+    double weight;
+    Boxweight(){
+        this.weight=-1;
+    }
+    public Boxweight(double l, double w, double h, double weight) {
+        super(l, w, h);
+        // Used Calling The Directly Above Parent Class Constructor
+        // Used To Initialise Values Present In Parent Class
+        // This Cannot Access Things Which Are Declared As Private In Parent Class
+        System.out.println(super.weight);
+        // Super can Also Be Used To Explicitly Call The Members Of Parent class
+        // Ex- If Parent And Child Class have A Variable/method  Of Same Name Then We Can use
+        // Super.variable_name to Specifically Call The Parent Class Variable/method
+
+        this.weight = weight;
+//        super(l, w, h);
+        // We Can't Initialise The Parent Class Later If The Function Needs It.
+        // We Need To First initialise The Parent Class Otherwise It Will give Error.
+        // Parent Class Doesn't Care What's Below it But Child Class Care What is Above It So
+        // We need To Declare Parent Class First Or Call Them First If Needed
+    }
+
