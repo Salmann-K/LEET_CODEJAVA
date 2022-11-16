@@ -1,1 +1,45 @@
+package com.company.dsajava.OOPS;
+
+public class INHERITANCE {
+    public static void main(String[] args) {
+//        Box box1= new Box(4,5,6);
+//        Box box2 = new Box(box1);
+//        Boxweight box3 = new Boxweight(7,8,9,4);
+//        System.out.println(box1.l+", "+box1.w+", "+box1.h);
+//        System.out.println(box2.l+", "+box2.w+", "+box2.h);
+//        System.out.println(box3.l+", "+box3.w+", "+box3.h+", "+box3.weight);
+//
+//        Box box5= new Boxweight(10,11,12,13);
+//        System.out.println(box5.weight);
+        // Give Error Even Though The Object Is Of Type Box weight
+        // Because It Is The Type of reference Variable not the type of object Which Determines
+        // What members Can Be Accessed
+
+//        Boxweight box6= new Box(8,7,9);
+        // Giving error
+        // We Have Access To variable That Are in ref Type
+        // Hence We Have Access To Weight Variable
+        // This Also Means That the Once You Are Trying to Access Should Be Initialised
+
+        // But Here, Since Object Itself Of Type Parent class , How will You call The Constructor
+        // Of Child Class
+
+        // Upward Classes Does not Know What Is Below but The Below Classes Know What Is Above
+
+        Boxprice box = new Boxprice(5,8,200);
+        System.out.println(box.l+" "+box.weight+" "+box.cost);
+
+    }
+}
+
+class Box{
+    double l;
+    double w;
+    double h;
+    double weight;
+    Box(){
+     this.l=-1;
+     this.w=-1;
+     this.h=-1;
+    }
 
