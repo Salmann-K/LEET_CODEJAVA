@@ -1,1 +1,18 @@
+package com.company.dsajava.OOPS;
+import java.util.*;
+import java.util.Vector;
 
+public class COLLECTIONFRAMEWORK {
+    public static void main(String[] args) {
+        /*
+    // vECTOR
+        List<Integer> vector = new Vector<>();
+        vector.add(56);
+        vector.add(74);
+        System.out.println(vector);
+         */
+    }
+}
+interface Af{
+    void fun();
+}
