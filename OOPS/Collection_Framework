@@ -16,3 +16,24 @@ public class COLLECTIONFRAMEWORK {
 interface Af{
     void fun();
 }
+
+class Basic{
+    enum Week implements Af{
+        Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday;
+        //These Are Enum constant
+        // By default They Are Public,static,final
+        // Since its final we cannot create child enums
+        // Type Is week
+        Week() {
+            System.out.println("Constructor Called For "+ this);
+            // This Is not Public or Protected . Only Private or Default
+            // Why Because We Dont Want To create new Objects
+        }
+        @Override
+        public void fun() {
+            System.out.println("Its Fun");
+        }
+        // We Cannot Inherit Anything To Enums Because They Are Already Inheriting Enum Class
+        // And A Class Can Inherit Only One Class.
+        // We Can Implement An Interface In Enums
+    }
