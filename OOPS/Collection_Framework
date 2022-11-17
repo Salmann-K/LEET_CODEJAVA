@@ -37,3 +37,17 @@ class Basic{
         // And A Class Can Inherit Only One Class.
         // We Can Implement An Interface In Enums
     }
+
+public static void main(String[] args) {
+        Week week;
+        week=Week.Thursday;
+        for (Week day : Week.values()){
+        System.out.println(day);
+        }
+        System.out.println(week);
+        System.out.println(Week.valueOf("Saturday")); // It return enum constant
+        System.out.println(week.ordinal()); // tells The Position
+        System.out.println(week);
+        // If We Call This While Having A Constructor It Gonna Do It For All The Objects Of Enums
+        week.fun();
+    }
