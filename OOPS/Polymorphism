@@ -35,3 +35,46 @@ class Shapes {
     // Below override Calls Will Not Gonna Work
      */
 }
+
+
+class Square extends Shapes {
+    // When A Method Is Completely Same as Parent include Return type,parmeters, etc only the body
+    // is changed It is called Method Overriding
+    // This Will Be Given The Priority Over The Main Class. This Gonna Override Main One
+    // Whenever The Object of This Child Class is Created This One will Get Called
+    @Override
+    void area(){
+        System.out.println("The Area is Sides Square");
+    }
+
+}
+class Circle extends Shapes {
+    @Override
+    void area(){
+        System.out.println("The Area Is pie * r * r ");
+    }
+}
+
+// Compile Time / Static Polymorphism
+class number{
+    int sum(int a,int b){return (a+b);}
+
+    double sum(double a,int b){return (a+b);}
+    int sum(int a, int b, int c){ return (a+b+c); }
+    public static void main(String[] args) {
+        // In The Compile Time The Compiler has To Check Which Constructor Has To Call
+        number obj = new number();
+
+        obj.sum(2,5);
+        /*
+        Test
+        if I Have Passed And Integer And The Constructor Of Two Argument have double it type cast
+        and still Use that method
+
+        but if Have Two Method One OF Double and One Of Integer having same Number Of Arguments Then
+        it Gonna Use The One Which Matches The Argument Type
+         */
+        obj.sum(3,5,6);
+    }
+}
+
