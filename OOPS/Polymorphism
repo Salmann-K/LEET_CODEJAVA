@@ -1,1 +1,37 @@
+package com.company.dsajava.OOPS;
 
+public class POLYMORPHISM {
+    public static void main(String[] args) {
+    // What It Will Able To Access Will Depend On reference Type , Which One Its Gonna Access is Depend
+    // On The Object Type it Is known As Upcasting
+    Shapes shape = new Shapes();
+    Square sq = new Square();
+    Circle c = new Circle();
+    Shapes sh = new Square();
+
+    shape.area();
+    sq.area();
+    c.area();
+    sh.area();
+    }
+}
+
+// Runtime / Dynamic Polymorphism
+class Shapes {
+    void area(){
+        System.out.println("I am in Shapes");
+    }
+    /* Early Binding
+    // If I Use The Final Keyword with The  Area method Then The Overriding Is Not Possible
+    // It Will Not Allow The Child Class To Override it
+        final void area(){
+        System.out.println("I am in Shapes");
+    }
+     */
+
+    /*
+    static void area(){ System.out.println("I am in Shapes"); }
+    // We can inherit static method but we cannot override it. Hence in This Static Case
+    // Below override Calls Will Not Gonna Work
+     */
+}
