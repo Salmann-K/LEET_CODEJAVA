@@ -1,1 +1,48 @@
+package com.company.dsajava.OOPS;
+
+public class Exception_Handling {
+    public static void main(String[] args) {
+
+        // Try Catch Method
+        int a= 28; int b=0;
+        //int c=a/b;  // This Will Give Error Because Dividng By Zero . To Overcome This We Are Using Try Catch
+        try{
+            int c=a/b;
+//            divide(a,b);
+        }catch (ArithmeticException e){
+            System.out.println(e.getMessage());
+        }
+        catch (Exception ed){
+            System.out.println("Normal Exception");
+        }
+        /*
+        // This Is Not Right Way Explained Below
+        catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+        catch (ArithmeticException ed){
+            System.out.println("Normal Exception");
+        }*/
+        finally {
+            System.out.println("This block Will Always Gonna Run Whether There is An Exception or Not");
+        }
+        // We Cannot Have Multiple Final Block there will be Only final block
+
+        // So In Multiple Catch It Gonna Check In Order Wht Type Of Exception Is Occuring and will Choose the catch
+        // Exception Of That Type To run. In This It Is Arithmetic Exception so It wiil Show message of Catch Block
+        // Having Arithmetic Exception. otherwise Another One.
+        // We Cannot Have Catch Block Containing "Exception" first Because It Includes All Exceptions And All The Below
+        // Call We not Gonna run And It Will Give error. So We need To Put More Strict Ones Above
+
+    }
+    // throw and throws
+    static int divide (int a, int b) throws ArithmeticException{
+        if(b==0){
+            throw new ArithmeticException("Please Do Not Divide By Zero");
+        }
+        return a+b;
+    }
+    // Throws Is Used To Declare That The Method Or Function Or The Thing Is Going throw Exception
+    // Throw is Used To Throw The Exception That Will occur
+}
 
