@@ -45,4 +45,21 @@ public class Exception_Handling {
     // Throws Is Used To Declare That The Method Or Function Or The Thing Is Going throw Exception
     // Throw is Used To Throw The Exception That Will occur
 }
+// Creating Our Own Exception
+class Myexception extends Exception{
+    public Myexception(String Name) {
+        super(Name);
+    }
+    public static void main(String[] args) {
+        try{
+            String name="Zoya";
+            if(name!="Udita"){
+                throw new Myexception("You Will Not Get Me");
+            }
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+
+    }
+}
 
