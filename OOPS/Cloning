@@ -1,1 +1,33 @@
+package com.company.dsajava.OOPS;
+import java.util.*;
+public class Cloning implements Cloneable{
+    int age;
+    String Name;
+    int arr[];
+    // We Dont Need This If We Are Using Cloning
+//    public Cloning(Cloning other) {
+//        this.age=other.age;
+//        this.Name= other.Name;
+//    }
+    public Cloning(int age, String name) {
+        this.age = age;
+        this.Name = name;
+        this.arr=new int[]{9,5,46,7,8,3};
+    }
+//    public Object clone() throws CloneNotSupportedException{
+//        // This Is Shallow Copy
+//        // That Means it Will Create New Object For Primitives Like Integers
+//        // But For Non-Primitives It Will Point To The Same The Object From Which It Is Cloned
+//        return super.clone();
+//    }
+    public Object clone() throws CloneNotSupportedException{
+        Cloning twin=(Cloning)super.clone(); // This Is Shallow
+        // Deep
+        twin.arr=new int[twin.arr.length];
+        for (int i = 0; i <twin.arr.length ; i++) {
+            twin.arr[i]=this.arr[i];
+        }
+        return twin;
+    }
+}
 
