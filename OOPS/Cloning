@@ -31,3 +31,22 @@ public class Cloning implements Cloneable{
     }
 }
 
+class Mains{
+    public static void main(String[] args) throws CloneNotSupportedException{
+        Cloning Salman = new Cloning(20,"Salman");
+        //Cloning twin = new Cloning(Salman);
+        // We Can do In this Way Or
+        Cloning twin = (Cloning)Salman.clone();
+        System.out.println(twin.age+" "+twin.Name);
+        System.out.println(Arrays.toString(twin.arr));
+        twin.arr[0]=190;
+        // This Is Not Only Modifying The Twin Array But Also Modifying The Salman Array
+        // Because It Is Shallow Copying
+        // That Means it Will Create New Object For Primitives Like Integers
+        // But For Non-Primitives It Will Point To The Same The Object From Which It Is Cloned
+        // Hence Array And String Will Be Modified for Both If Modified In One
+        System.out.println(Arrays.toString(twin.arr));
+        System.out.println(Arrays.toString(Salman.arr));
+        // After Using Deep Coying If I Print This Again It Will Not Change Salman Array
+    }
+}
