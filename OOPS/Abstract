@@ -33,3 +33,29 @@ abstract class parent{
         this.age = age;
         val=5646435;
     }
+    
+    
+    //abstract public parent(int age,int height) {
+    //this.age = age;
+    //}
+
+    // We Cannot Create Abstract Constructor
+    abstract void career();
+    abstract void dream();
+
+    // static void abstract greeting();
+
+    // We Cannot Create Abstact Static Methods because Abstract method Cannot be Overriden
+    // And We Need To Override Abstract method
+
+    static void greeting(){
+        System.out.println("Good Morning");
+    }
+    // We Can Create static Method In Abstract classes
+
+    void askafter(){
+        System.out.println("Hope You Are Good !\n" + "You Are Working Hard Keep Going");
+    }
+    // We Can Have Normal Methods Also
+}
+
