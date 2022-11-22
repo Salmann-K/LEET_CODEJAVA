@@ -59,3 +59,48 @@ abstract class parent{
     // We Can Have Normal Methods Also
 }
 
+
+class Son extends parent{
+//    public Son(int age) {
+//        this.age=age;
+//    }
+
+    // Or Can Also Be By Super
+    public Son(int age) {
+        super(age);
+    }
+
+    @Override
+    void askafter() {
+        super.askafter();
+    }
+
+    @Override
+    void career() {
+        System.out.println("I Want To Be A Coder");
+    }
+    @Override
+    void dream() {
+        System.out.println("Want To Build A Tech Startup");
+    }
+}
+class Daughter extends parent{
+//    public Daughter(int age) {
+//        this.age=age;
+//    }
+
+    // Also Can be Done By Super
+    public Daughter(int age) {
+        super(age);
+    }
+    @Override
+    void career() {
+        System.out.println("Want To be A Doctor");
+    }
+    @Override
+    void dream() {
+        System.out.println("To Serve Millions Of People");
+    }
+}
+
+
