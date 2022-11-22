@@ -1,1 +1,35 @@
+package com.company.dsajava.OOPS;
 
+public class ABSTRACT {
+    public static void main(String[] args) {
+    Son son = new Son(21);
+    son.career();
+    int a = son.age;
+    System.out.println(a+"\n");
+
+    Daughter daughter= new Daughter(19);
+    daughter.career();
+    int b = daughter.age;
+    System.out.println(b+"\n");
+
+    //parent p = new parent(25);
+    // We Cannot Create Objects Of Parent Classes
+    // If We Want To We Need to Override It Here
+
+    parent.greeting();
+    son.askafter();
+
+    }
+}
+
+abstract class parent{
+
+    // If Any Of The Method Is Abstract Then The Class Needs To Be Abstract
+    // Abstract needs To be Extended For Its Method To be Overriden So We Cannot Have Final Abstract class
+    int age;
+    final int val;
+    // We Cannot Initialise it directly but we can do That by super in constructor of child Class
+    public parent(int age) {
+        this.age = age;
+        val=5646435;
+    }
