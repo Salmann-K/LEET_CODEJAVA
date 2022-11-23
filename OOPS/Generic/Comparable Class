@@ -13,3 +13,19 @@ public class Comparable_class {
     }}
 // We need To Implement Comparable Interface To Compare The objects
 // And We Need To Implement The Method Compare To Also
+
+class student implements Comparable<student>{
+    int roll_no;
+    float marks;
+    public student(int roll_no, float marks) {
+        this.roll_no = roll_no;
+        this.marks = marks;
+    }
+    @Override
+    public int compareTo(student o) {
+        int diff = (int)(this.marks-o.marks);
+        // If diff==0 Means Both Are Equal
+        // if Diff < 0 means o is bigger else o is smaller
+        return diff;
+    }
+}
