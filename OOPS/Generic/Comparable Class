@@ -1,1 +1,15 @@
+package com.company.dsajava.OOPS.Generic;
 
+import java.util.ArrayList;
+import org.jetbrains.annotations.NotNull;
+public class Comparable_class {
+    public static void main(String[] args) {
+    student Salman = new student(35,97.28f);
+    student Udita = new student(62,99.15f);
+    if(Salman.compareTo(Udita) < 0) {System.out.println("Udita Has More Marks");}
+    else {System.out.println("Salman Has More Marks");}
+    // If The Student Class Doesnot implements Comparable Class And implement Compare to Method
+    // It Will get error Because Java will get Confused What To Compare
+    }}
+// We need To Implement Comparable Interface To Compare The objects
+// And We Need To Implement The Method Compare To Also
