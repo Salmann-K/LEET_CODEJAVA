@@ -51,3 +51,31 @@ custom_Arraylist<T> {
                 ", size=" + size +
                 '}';
     }
+    
+    
+    private boolean isfull() {
+        return size==data.length;
+    }
+
+    public static void main(String[] args) {
+      //  ArrayList list = new ArrayList();
+
+//         custom_Arraylist list = new custom_Arraylist();
+//         list.add(5);
+//         list.add(28);
+//         list.add(19);
+//         System.out.println(list);
+
+            custom_Arraylist<Integer> list2 = new custom_Arraylist<>();
+            list2.add(85);
+            list2.set(1,62);
+            System.out.println(list2.get(1));
+
+            custom_Arraylist<String> list3 = new custom_Arraylist<>();
+            list3.add("Salman");
+            list3.set(1,"Udita");
+            System.out.println(list3.get(1));
+
+    }
+}
+
