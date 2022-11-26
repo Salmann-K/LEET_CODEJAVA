@@ -1,1 +1,31 @@
+package com.company.dsajava.OOPS.Generic;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
+// Here T Should Either Be Number Or its Subclass
+// It Is Wildcard
+//public class custom_Arraylist<T extends Number> {
+public class
+custom_Arraylist<T> {
+    private Object data[];
+    private static int defaultsize=10;
+    private int size=0;
+
+    public custom_Arraylist() {
+        this.data = new Object[defaultsize];
+    }
+    public void add(T num){
+        if(isfull()){
+            resize();
+        }
+        data[size++]=num;
+    }
+
+    private void resize() {
+        Object temp[]= new Object[data.length*2];
+        for (int i = 0; i < data.length ; i++) {
+            temp[i]=data[i];
+        }
+        data=temp;
+    }
