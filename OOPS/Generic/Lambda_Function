@@ -1,1 +1,11 @@
+package com.company.dsajava.OOPS.Generic;
+
+public class lambdafunction {
+    public static void main(String[] args) {
+
+    Operation sum=(a,b)-> a + b;
+    Operation pro=(a,b)-> a * b;
+    Operation dif=(a,b)-> a - b;
+
+    lambdafunction myCalc = new lambdafunction();
 
