@@ -8,4 +8,15 @@ public class lambdafunction {
     Operation dif=(a,b)-> a - b;
 
     lambdafunction myCalc = new lambdafunction();
+        System.out.println(myCalc.operate(8,5,sum));
+    System.out.println(myCalc.operate(8,5,pro));
+    System.out.println(myCalc.operate(8,5,dif));
+    }
+    private int operate(int a, int b, Operation op){
+        return op.operation(a,b);
+    }
+}
+interface Operation{
+    int operation (int a,int b);
+}
 
