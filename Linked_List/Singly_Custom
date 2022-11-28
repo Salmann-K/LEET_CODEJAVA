@@ -39,3 +39,55 @@ public class Singly_CUSTOM_LINKEDLIST {
             temp=temp.next;
         }
 
+
+        Node node = new Node(val,temp.next);
+        temp.next=node;
+        size++;
+    }
+
+    public void insertrecu(int val, int index){
+        head=insertrec(val,index,head);
+    }
+    private Node insertrec(int val , int index,Node node){
+        if(index==0){
+            Node temp=new Node(val,node);
+            size++;
+            return temp;
+        }
+        node.next=insertrec(val,index-1,node.next);
+        return node;
+    }
+    public int deletefirst(){
+        int val= head.value;
+        head=head.next;
+        if(head==null){
+            tail=null;
+        }
+        size--;
+        return val;
+    }
+    public int deletelast(){
+        if(size<=1){
+            return deletefirst();
+        }
+        Node secondlast = get(size-2);
+        int val= tail.value;
+        tail=secondlast;
+        tail.next=null;
+        return val;
+    }
+    public int delete(int index){
+        if(index==0){
+            return deletefirst();
+        }
+        if(index==size){
+            return deletelast();
+        }
+        Node prev = get(index-1);
+        int val=prev.next.value;
+
+        prev.next=prev.next.next;
+
+        return val;
+    }
+
