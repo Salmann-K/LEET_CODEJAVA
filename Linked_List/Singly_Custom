@@ -1,1 +1,41 @@
+package com.company.dsajava.LINKEDLIST;
+
+// Singly Linkedlist
+public class Singly_CUSTOM_LINKEDLIST {
+    private Node head;
+    private Node tail;
+    private int size;
+    public void insertfirst(int val){
+        Node node = new Node(val);
+        node.next=head;
+        head=node;
+        if(tail==null){
+            tail=head;
+        }
+        size+=1;
+    }
+    // Inserting At Last position
+    public void insertlast(int val){
+        if(tail==null){
+            insertfirst(val);
+            return;
+        }
+        Node node = new Node(val);
+        tail.next=node;
+        tail=node;
+        size++;
+    }
+    public void insert(int val, int index){
+        if(index==0){
+            insertfirst(val);
+            return;
+        }
+        if(index==size){
+            insertlast(val);
+            return;
+        }
+        Node temp =head;
+        for (int i = 1; i <index ; i++) {
+            temp=temp.next;
+        }
 
