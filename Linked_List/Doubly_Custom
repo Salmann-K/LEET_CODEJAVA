@@ -1,1 +1,42 @@
+package com.company.dsajava.LINKEDLIST;
 
+public class Doubly_CUSTOM_LINKEDLIST {
+     private Node head;
+     public void insertfirst(int val){
+         Node node = new Node(val);
+         node.next=head;
+         node.prev=null;
+         if(head!=null){
+             head.prev=node;
+         }
+         head=node;
+     }
+     public void insertlast(int val){
+         Node node = new Node(val);
+         Node tem=head;
+         node.next=null;
+         if(head==null){
+             node.prev=null;
+             head=node;
+             return;
+         }
+         while(tem.next!=null){
+             tem=tem.next;
+         }
+         tem.next=node;
+         node.prev=tem;
+     }
+     public void insert(int val,int index){
+         if(index==0){
+             insertfirst(val);
+             return;
+         }
+         Node temp=head;
+         for (int i = 1; i <index ; i++) {
+             temp=temp.next;
+         }
+         Node node = new Node(val);
+         node.next=temp.next;
+         temp.next=node;
+         node.prev=temp;
+     }
