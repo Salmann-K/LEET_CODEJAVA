@@ -41,3 +41,28 @@ public class CIRCULAR_CUSTOM_LINKEDLIST {
         }while(tem!=head);
 
     }
+    
+    public void display(){
+        Node tem=head;
+        if(head!=null){
+            do{
+                System.out.print(tem.value+" -> ");
+                tem=tem.next;
+            }while(tem!=head);
+        }
+        System.out.println("Head");
+
+    }
+    private class Node{
+
+        int value;
+        Node next;
+
+        public Node(int value) {
+            this.value = value;
+        }
+
+    }
+
+}
+
