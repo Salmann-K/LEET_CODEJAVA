@@ -1,1 +1,43 @@
+package com.company.dsajava.LINKEDLIST;
 
+public class CIRCULAR_CUSTOM_LINKEDLIST {
+    private Node head;
+    private Node tail;
+
+    public CIRCULAR_CUSTOM_LINKEDLIST() {
+        this.head = null;
+        this.tail = null;
+    }
+
+    public void insert(int val){
+    Node node = new Node(val);
+    if(head==null){
+        head=node;
+        tail=node;
+        return;
+    }
+    tail.next=node;
+    node.next=head;
+    tail=node;
+    }
+
+    public void delete(int value){
+        Node tem = head;
+        if(tem==null){
+            return;
+        }
+        if(tem.value==value){
+            head=head.next;
+            tail.next=tail;
+            return;
+        }
+        do{
+            Node n = tem.next;
+            if(n.value==value){
+                tem.next=n.next;
+                break;
+            }
+            tem=tem.next;
+        }while(tem!=head);
+
+    }
