@@ -1,1 +1,18 @@
+ /*
+    1290. Convert Binary Number in a Linked List to Integer
 
+    public static int getDecimalValue(ListNode head) {
+    ArrayList<Integer> al = new ArrayList<>();
+    ListNode temp=head;
+    while(temp!=null){
+        al.add(temp.val);
+        temp=temp.next;
+    }
+    int sum=0;
+    int len=al.size();
+    for (int i = 0; i <len; i++) {
+        sum+=(Math.pow(2,i)*al.get(len-i-1));
+    }
+    return sum;
+    }
+     */
