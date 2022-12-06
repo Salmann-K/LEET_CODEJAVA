@@ -443,5 +443,29 @@
         return head;
     }
      */
+    /*
+    2095. Delete the Middle Node of a Linked List
+    public ListNode deleteMiddle(ListNode head) {
+    if(head==null || head.next==null){
+        return null;
+    }
+    ListNode mid = middleNode(head);
+    ListNode temp=head;
+    while (temp.next!=mid){
+        temp=temp.next;
+    }
+    temp.next=mid.next;
+    return head;
+    }
+    public ListNode middleNode(ListNode head) {
+        ListNode fast=head;
+        ListNode slow=head;
+        while(fast!=null && fast.next!=null){
+            slow=slow.next;
+            fast=fast.next.next;
+        }
+        return slow;
+    }
+    */
 
 
