@@ -485,5 +485,34 @@
     }
      */
 
+     
+    /*
+    19. Remove Nth Node From End of List
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+    if(head.next==null){
+        return null;
+    }
+    ListNode co =head;
+    while (n>0){
+        co=co.next;
+        n--;
+    }
+    ListNode temp =head;
+    if (co==null){
+        return head.next;
+    }
+    while (co.next!=null){
+        temp=temp.next;
+        co=co.next;
+    }
+    if(temp.next!=null){
+        temp.next=temp.next.next;
+    }else{
+        temp.next = null;
+    }
+    return head;
+    }
+     */
+
 
 
