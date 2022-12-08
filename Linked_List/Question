@@ -581,5 +581,31 @@
         return sumList;
     }
      */
+     
+      /*
+        24. Swap Nodes in Pairs
+        public ListNode swapPairs(ListNode head) {
+        if(head==null || head.next==null){
+            return head;
+        }
+        ListNode currentPointer = head, temp, prevNode = head;
+        while (currentPointer != null) {
+            if (currentPointer.next == null) {
+                break;
+            }
+            temp = currentPointer.next;
+            currentPointer.next = temp.next;
+            temp.next = currentPointer;
+            if (head == currentPointer) {
+                head = temp;
+            } else {
+                prevNode.next = temp;
+            }
+            prevNode = currentPointer;
+            currentPointer = currentPointer.next;
+        }
+        return head;
+        }
+        */
 
 
