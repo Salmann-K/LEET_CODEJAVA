@@ -752,3 +752,17 @@
         }
         return head1.next;
     }
+     public ListNode SkipZeroSum(ListNode node){
+        int sum =0;
+        ListNode temp = node;
+        while(temp!=null)
+        {
+            sum+=temp.val;
+            if(sum==0)
+            {return temp.next;}
+            else
+            {temp=temp.next;}
+        }
+        return node;
+    }
+     */
