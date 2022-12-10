@@ -766,3 +766,28 @@
         return node;
     }
      */
+     
+      /*
+    Delete a Node in Single Linked List // GeeksForGeeks
+    Node deleteNode(Node head, int x){
+        Node curr = head;
+        if(x == 1){
+            head = curr.next;
+            return head;
+        }
+        int i = 1;
+        while(curr != null){
+            if(i == x-1 && curr.next == null){
+                curr.next = null;
+                break;
+            }
+            if(i == x-1){
+                curr.next = curr.next.next;
+                break;
+            }
+            curr = curr.next;
+            i++;
+        }
+        return head;
+    }
+    */
