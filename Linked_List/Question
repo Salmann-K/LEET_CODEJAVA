@@ -820,4 +820,12 @@
                 fast.next=null;
             } } }
      */
+     
+      /*
+    Delete without head pointer // GEEKSFORGEEKS
+    void deleteNode(Node del){
+        del.data=del.next.data;
+        del.next=del.next.next;
+    }
+     */
 
