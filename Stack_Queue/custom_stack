@@ -1,1 +1,24 @@
+package com.company.dsajava.STACKQUEUE;
+import javax.swing.text.DefaultEditorKit;
+public class CUSTOM_STACK {
+    protected int[] data; // can be done with other data type
+    private static  final int Default_Size=10;
+    int ptr=-1;
+    public CUSTOM_STACK(){
+        this.data=new int[Default_Size];
+        // Or
+//        this(Default_Size);
+    }
+    public CUSTOM_STACK(int size){
+        this.data= new int[size];
+    }
+    public boolean push(int item){
+        if(isFull()){
+            System.out.println("Stack Is Full");
+            return false;
+        }
+        ptr++;
+        data[ptr]=item;
+        return true;
+    }
 
