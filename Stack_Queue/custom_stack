@@ -22,3 +22,26 @@ public class CUSTOM_STACK {
         return true;
     }
 
+   public int pop() throws StackException{
+        if(isempty()){
+            throw new StackException("The Stack Is Empty");
+        }
+//        int removed=data[ptr];
+//        ptr--;
+//        return removed;
+            // Or
+        return data[ptr--];
+    }
+    public int peek() throws StackException{
+        if(isempty()){
+            throw new StackException("The Stack Is Empty! You Cannot Peek");
+        }
+        return data[ptr];
+    }
+    public boolean isFull(){
+        return ptr == data.length-1; // ptr is at last index
+    }
+    private boolean isempty(){
+        return ptr == -1;
+    }
+}
