@@ -25,3 +25,37 @@ public class CUSTOM_QUEUE {
         return true;
     }
 
+
+    public int remove() throws Exception{
+        if (isempty()){
+            throw new Exception("Queue Is Empty");
+        }
+        int remove=data[0];
+
+        for (int i = 1; i <end ; i++) {
+            data[i-1]=data[i];
+        }
+        end--;
+        return remove;
+    }
+
+    public int front() throws Exception{
+        if (isempty()){
+            throw new Exception("Queue Is Empty");
+        }
+        return data[0];
+    }
+
+    public void display(){
+        for (int i = 0; i <end ; i++) {
+            System.out.print(data[i]+" ");
+        }
+        System.out.println("End");
+    }
+    public boolean isFull(){
+        return end == data.length; // ptr is at last index
+    }
+    public boolean isempty(){
+        return end == 0;
+    }
+}
