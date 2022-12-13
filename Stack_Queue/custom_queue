@@ -1,1 +1,27 @@
+package com.company.dsajava.STACKQUEUE;
+
+public class CUSTOM_QUEUE {
+    // We Can Easily Do With Two Pointers One For First And Second So We Are Doing With Only One pointer
+
+    private int data[];
+    private static final int Default_Size=10;
+    int end=0;
+
+    public CUSTOM_QUEUE(){
+        this.data=new int[Default_Size];
+        // Or
+//        this(Default_Size);
+    }
+
+    public CUSTOM_QUEUE(int size){
+        this.data= new int[size];
+    }
+
+    public boolean insert(int Item){
+        if (isFull()){
+            return false;
+        }
+        data[end++]=Item;
+        return true;
+    }
 
